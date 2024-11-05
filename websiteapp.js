@@ -2,7 +2,7 @@
 const resourceMap = {
     anxiety: {
         therapist: [
-            { name: "BetterHelp (Online Counseling)", link: "https://www.betterhelp.com" },
+            { name: "BetterHelp (Online Counseling)", link: "https://www.betterhelp.com", description: "Virtual counceling and therapist providers" },
             { name: "Talkspace", link: "https://www.talkspace.com" }
         ],
         hotlines: [
@@ -47,7 +47,10 @@ function findResources() {
         // Display the results
         let responseHtml = `<h2>Recommended Resources for ${issue}</h2><ul>`;
         resources.forEach(resource => {
-            responseHtml += `<li><a href="${resource.link}" target="_blank">${resource.name}</a></li>`;
+            responseHtml += `<li>
+            <a href="${resource.link}" target="_blank">${resource.name}</a>
+            <p>${resource.description}</p> <!-- Display the description -->
+            </li>`;
         });
         responseHtml += '</ul>';
         resultsSection.innerHTML = responseHtml;
