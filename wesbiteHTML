@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Resource Finder</title>
+    <link rel="stylesheet" href="websitestyles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Mental Health Resource Finder</h1>
+        <p>Find tailored mental health resources based on your specific needs.</p>
+    </header>
+
+    <section id="questionnaire">
+        <h2>Tell Us About Your Issue</h2>
+        <form id="resource-form">
+            <label for="issue">What are you currently struggling with?</label>
+            <select name="issue" id="issue" required>
+                <option value="">Select an issue</option>
+                <option value="anxiety">Anxiety</option>
+                <option value="depression">Depression</option>
+                <option value="stress">Stress</option>
+                <option value="addiction">Addiction</option>
+                <option value="relationship-issues">Relationship Issues</option>
+                <option value="grief">Grief/Loss</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="support">What kind of support are you looking for?</label>
+            <select name="support" id="support" required>
+                <option value="">Select support type</option>
+                <option value="therapist">Online Therapists/Counselors</option>
+                <option value="hotlines">Hotlines</option>
+                <option value="apps">Mental Health Apps</option>
+                <option value="support-groups">Online Support Groups</option>
+                <option value="education">Educational Resources</option>
+            </select>
+
+            <button type="button" onclick="findResources()">Find Resources</button>
+        </form>
+    </section>
+
+    <section id="results">
+        <!-- Results will be dynamically inserted here -->
+    </section>
+
+    <footer>
+        <p>© 2024 Mental Health Resource Finder</p>
+    </footer>
+
+    <script src="websiteapp.js"></script>
+</body>
+</html>
