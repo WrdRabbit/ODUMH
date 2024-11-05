@@ -1,30 +1,66 @@
-// Define resources in a JavaScript object
+// Define resources in a JavaScript object with descriptions
 const resourceMap = {
     anxiety: {
         therapist: [
-            { name: "BetterHelp (Online Counseling)", link: "https://www.betterhelp.com", description: "Virtual counceling and therapist providers" },
-            { name: "Talkspace", link: "https://www.talkspace.com" }
+            { 
+                name: "BetterHelp (Online Counseling)", 
+                link: "https://www.betterhelp.com", 
+                description: "BetterHelp offers online therapy services through video, phone, and messaging." 
+            },
+            { 
+                name: "Talkspace", 
+                link: "https://www.talkspace.com", 
+                description: "Talkspace connects users with licensed therapists through a secure app." 
+            }
         ],
         hotlines: [
-            { name: "Crisis Text Line", link: "https://www.crisistextline.org" }
+            { 
+                name: "Crisis Text Line", 
+                link: "https://www.crisistextline.org", 
+                description: "A text-based support service for people in crisis, available 24/7." 
+            }
         ],
         apps: [
-            { name: "Headspace", link: "https://www.headspace.com" },
-            { name: "Calm", link: "https://www.calm.com" }
+            { 
+                name: "Headspace", 
+                link: "https://www.headspace.com", 
+                description: "A meditation and mindfulness app with guided sessions." 
+            },
+            { 
+                name: "Calm", 
+                link: "https://www.calm.com", 
+                description: "An app for meditation, relaxation, and sleep assistance." 
+            }
         ],
         supportGroups: [
-            { name: "7 Cups (Online Support Group)", link: "https://www.7cups.com" }
+            { 
+                name: "7 Cups (Online Support Group)", 
+                link: "https://www.7cups.com", 
+                description: "7 Cups provides online emotional support with trained listeners." 
+            }
         ],
         education: [
-            { name: "Anxiety and Depression Association of America", link: "https://adaa.org" }
+            { 
+                name: "Anxiety and Depression Association of America", 
+                link: "https://adaa.org", 
+                description: "An organization that provides information and resources on anxiety and depression." 
+            }
         ]
     },
     depression: {
         therapist: [
-            { name: "BetterHelp", link: "https://www.betterhelp.com" }
+            { 
+                name: "BetterHelp", 
+                link: "https://www.betterhelp.com", 
+                description: "BetterHelp offers accessible, affordable, and private online therapy." 
+            }
         ],
         hotlines: [
-            { name: "National Suicide Prevention Lifeline", link: "https://suicidepreventionlifeline.org" }
+            { 
+                name: "National Suicide Prevention Lifeline", 
+                link: "https://suicidepreventionlifeline.org", 
+                description: "A 24/7 hotline for those in distress or in need of emotional support." 
+            }
         ]
         // Add more resources as needed
     },
@@ -47,10 +83,11 @@ function findResources() {
         // Display the results
         let responseHtml = `<h2>Recommended Resources for ${issue}</h2><ul>`;
         resources.forEach(resource => {
-            responseHtml += `<li>
-            <a href="${resource.link}" target="_blank">${resource.name}</a>
-            <p>${resource.description}</p> <!-- Display the description -->
-            </li>`;
+            responseHtml += `
+                <li>
+                    <a href="${resource.link}" target="_blank">${resource.name}</a>
+                    <p><textarea readonly>${resource.description}</textarea></p>
+                </li>`;
         });
         responseHtml += '</ul>';
         resultsSection.innerHTML = responseHtml;
