@@ -6,15 +6,15 @@
 }
 
 body {
-    font-family: "Courier New", Courier, monospace;
-    color: #39ff14; /* Neon green text */
-    background-color: #06300a; /* Dark green background */
+    font-family: Arial, sans-serif;
+    color: #333; /* Default dark text */
+    background-color: #f4f4f9; /* Light background */
     line-height: 1.6;
 }
 
 /* Header Section: Big First Page */
 header {
-    background-color: #094312;
+    background-color: #fafafa; /* Light background for header */
     padding: 5rem 1rem;
     text-align: center;
 }
@@ -22,36 +22,35 @@ header {
 header h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #39ff14;
+    color: #333;
 }
 
 header p {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
-    color: #39ff14;
-    opacity: 0.8;
+    color: #666;
 }
 
 header h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #39ff14;
+    color: #333;
 }
 
 /* Scroll-down Section */
 #questionnaire {
-    background-color: #09310e;
+    background-color: #fff;
     padding: 4rem 1rem;
     margin-top: 3rem;
     text-align: center;
-    border-top: 1px solid #39ff14;
+    border-top: 1px solid #ddd;
 }
 
 #questionnaire h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #39ff14;
+    color: #333;
 }
 
 form {
@@ -59,8 +58,8 @@ form {
     margin: 0 auto;
     padding: 1rem;
     text-align: left;
-    background-color: #0d3e12;
-    border: 1px solid #39ff14;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
@@ -68,7 +67,7 @@ label {
     display: block;
     font-size: 1.1rem;
     margin: 1rem 0 0.5rem;
-    color: #39ff14;
+    color: #333;
 }
 
 select, button {
@@ -76,21 +75,20 @@ select, button {
     padding: 0.7rem;
     font-size: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid #39ff14;
-    background-color: #1c4e1b;
-    color: #39ff14;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    color: #333;
 }
 
 button {
-    background-color: #39ff14;
-    color: #0a1f07;
+    background-color: #007BFF;
+    color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #2ecc71;
-    color: #002a00;
+    background-color: #0056b3;
 }
 
 /* Results Section */
@@ -102,7 +100,7 @@ button:hover {
 #results h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #39ff14;
+    color: #333;
 }
 
 #results ul {
@@ -114,7 +112,7 @@ button:hover {
 
 #results li {
     margin-bottom: 1rem;
-    color: #39ff14;
+    color: #333;
 }
 
 #results textarea {
@@ -122,9 +120,9 @@ button:hover {
     padding: 0.5rem;
     font-size: 0.9rem;
     margin-top: 0.5rem;
-    border: 1px solid #39ff14;
-    background-color: #1b3914;
-    color: #39ff14;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    color: #333;
     resize: none;
 }
 
@@ -132,8 +130,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #094312;
+    background-color: #eee;
     margin-top: 2rem;
-    color: #39ff14;
-    opacity: 0.8;
+    color: #666;
 }
