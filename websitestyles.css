@@ -30,6 +30,11 @@ header p {
     margin: 0 auto;
 }
 
+header h2 {
+    text-align: center;
+    font-size: 1.0rem;   
+    margin-bottom: 1rem;
+}
 /* Scroll-down Section */
 #questionnaire {
     background-color: #fff;
