@@ -11,6 +11,11 @@ const resourceMap = {
                 name: "Talkspace", 
                 link: "https://www.talkspace.com", 
                 description: "Talkspace connects users with licensed therapists through a secure app." 
+            },
+            { 
+                name: "Amwell", 
+                link: "https://www.amwell.com", 
+                description: "A telehealth service offering mental health counseling, including support for anxiety and stress management." 
             }
         ],
         hotlines: [
@@ -18,6 +23,11 @@ const resourceMap = {
                 name: "Crisis Text Line", 
                 link: "https://www.crisistextline.org", 
                 description: "A text-based support service for people in crisis, available 24/7." 
+            },
+            { 
+                name: "National Suicide Prevention Lifeline (U.S.)", 
+                number: "1-800-273-8255", 
+                description: "Though it’s for suicide prevention, they also offer help for severe anxiety and panic attacks." 
             }
         ],
         apps: [
