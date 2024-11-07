@@ -2,59 +2,27 @@
 const resourceMap = {
     anxiety: {
         therapist: [
-            { 
-                name: "BetterHelp (Online Counseling)", 
-                link: "https://www.betterhelp.com", 
-                description: "BetterHelp offers online therapy services through video, phone, and messaging." 
-            },
-            { 
-                name: "Talkspace", 
-                link: "https://www.talkspace.com", 
-                description: "Talkspace connects users with licensed therapists through a secure app." 
-            },
-            { 
-                name: "Amwell", 
-                link: "https://www.amwell.com", 
-                description: "A telehealth service offering mental health counseling, including support for anxiety and stress management." 
-            }
+            { name: "BetterHelp", link: "https://www.betterhelp.com", description: "Online therapy services with various therapists." },
+            { name: "Talkspace", link: "https://www.talkspace.com", description: "Connects users with licensed therapists through an app." },
+            { name: "Amwell", link: "https://www.amwell.com", description: "Telehealth service offering mental health counseling." },
+            { name: "MDLive", link: "https://www.mdlive.com", description: "Online therapy for anxiety, depression, and more." }
         ],
         hotlines: [
-            { 
-                name: "Crisis Text Line", 
-                link: "https://www.crisistextline.org", 
-                description: "A text-based support service for people in crisis, available 24/7." 
-            },
-            { 
-                name: "National Suicide Prevention Lifeline (U.S.)", 
-                number: "1-800-273-8255", 
-                description: "Though it’s for suicide prevention, they also offer help for severe anxiety and panic attacks." 
-            }
+            { name: "Crisis Text Line", link: "https://www.crisistextline.org", description: "24/7 support through text for people in crisis." },
+            { name: "SAMHSA Helpline", link: "https://www.samhsa.gov/find-help/national-helpline", description: "Free, confidential 24/7 treatment referrals and information." }
         ],
         apps: [
-            { 
-                name: "Headspace", 
-                link: "https://www.headspace.com", 
-                description: "A meditation and mindfulness app with guided sessions." 
-            },
-            { 
-                name: "Calm", 
-                link: "https://www.calm.com", 
-                description: "An app for meditation, relaxation, and sleep assistance." 
-            }
+            { name: "Headspace", link: "https://www.headspace.com", description: "Meditation app with guided sessions for relaxation." },
+            { name: "Calm", link: "https://www.calm.com", description: "App for relaxation, sleep, and mindfulness." },
+            { name: "Sanvello", link: "https://www.sanvello.com", description: "App with tools for managing anxiety and depression." }
         ],
         supportGroups: [
-            { 
-                name: "7 Cups (Online Support Group)", 
-                link: "https://www.7cups.com", 
-                description: "7 Cups provides online emotional support with trained listeners." 
-            }
+            { name: "7 Cups", link: "https://www.7cups.com", description: "Online support with trained listeners." },
+            { name: "Anxiety Support Group on Reddit", link: "https://www.reddit.com/r/Anxiety/", description: "A community on Reddit for anxiety support." }
         ],
         education: [
-            { 
-                name: "Anxiety and Depression Association of America", 
-                link: "https://adaa.org", 
-                description: "An organization that provides information and resources on anxiety and depression." 
-            }
+            { name: "ADAA", link: "https://adaa.org", description: "Resources and information on anxiety and depression." },
+            { name: "Mind", link: "https://www.mind.org.uk", description: "Mental health charity offering information on anxiety." }
         ]
     },
     depression: {
@@ -77,21 +45,48 @@ const resourceMap = {
     // Add other issues like "stress", "addiction", etc.
 };
 
-// Function to find and display resources based on selected options
+// Function to display all resources in alphabetical order
+function displayAllResources() {
+    const resultsSection = document.getElementById("results");
+    let allResources = [];
+
+    // Gather all resources from all issues and support types
+    for (const issue in resourceMap) {
+        for (const supportType in resourceMap[issue]) {
+            resourceMap[issue][supportType].forEach(resource => {
+                allResources.push({ ...resource, issue, supportType });
+            });
+        }
+    }
+
+    // Sort resources alphabetically
+    allResources.sort((a, b) => a.name.localeCompare(b.name));
+
+    // Display all resources
+    let responseHtml = "<h2>All Resources</h2><ul>";
+    allResources.forEach(resource => {
+        responseHtml += `
+            <li>
+                <a href="${resource.link}" target="_blank">${resource.name}</a>
+                <p><textarea readonly>${resource.description}</textarea></p>
+            </li>`;
+    });
+    responseHtml += "</ul>";
+    resultsSection.innerHTML = responseHtml;
+}
+
+// Function to filter resources based on issue and support type
 function findResources() {
     const issue = document.getElementById("issue").value;
     const support = document.getElementById("support").value;
     const resultsSection = document.getElementById("results");
 
-    // Clear previous results
     resultsSection.innerHTML = "";
 
-    // Check if issue and support are selected and resources are available
     if (issue && support && resourceMap[issue] && resourceMap[issue][support]) {
         const resources = resourceMap[issue][support];
-        
-        // Display the results
-        let responseHtml = `<h2>Recommended Resources for ${issue}</h2><ul>`;
+
+        let responseHtml = `<h2>Resources for ${issue} - ${support}</h2><ul>`;
         resources.forEach(resource => {
             responseHtml += `
                 <li>
@@ -99,9 +94,12 @@ function findResources() {
                     <p><textarea readonly>${resource.description}</textarea></p>
                 </li>`;
         });
-        responseHtml += '</ul>';
+        responseHtml += "</ul>";
         resultsSection.innerHTML = responseHtml;
     } else {
         resultsSection.innerHTML = "<p>No resources found for the selected options.</p>";
     }
 }
+
+// Initial call to display all resources alphabetically
+displayAllResources();

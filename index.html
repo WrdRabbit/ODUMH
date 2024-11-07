@@ -12,14 +12,14 @@
         <p>Find tailored mental health resources based on your specific needs.</p>
     </header>
     <header> 
-        <h2>This resource repository is built to make help even more accesible. This repository focuses on supplying diverse mental health resources to a wide range of demographics, because everybody deserves help</h2>
+        <h2>This resource repository is built to make help accessible. It focuses on diverse mental health resources for all demographics, because everyone deserves help.</h2>
     </header>
 
     <section id="questionnaire">
-        <h2>Tell Us About Your Issue</h2>
+        <h2>Filter Resources by Issue and Support Type</h2>
         <form id="resource-form">
             <label for="issue">What are you currently struggling with?</label>
-            <select name="issue" id="issue" required>
+            <select name="issue" id="issue">
                 <option value="">Select an issue</option>
                 <option value="anxiety">Anxiety</option>
                 <option value="depression">Depression</option>
@@ -31,21 +31,21 @@
             </select>
 
             <label for="support">What kind of support are you looking for?</label>
-            <select name="support" id="support" required>
+            <select name="support" id="support">
                 <option value="">Select support type</option>
                 <option value="therapist">Online Therapists/Counselors</option>
                 <option value="hotlines">Hotlines</option>
                 <option value="apps">Mental Health Apps</option>
-                <option value="support-groups">Online Support Groups</option>
+                <option value="supportGroups">Online Support Groups</option>
                 <option value="education">Educational Resources</option>
             </select>
 
-            <button type="button" onclick="findResources()">Find Resources</button>
+            <button type="button" onclick="findResources()">Filter Resources</button>
         </form>
     </section>
 
     <section id="results">
-        <!-- Results will be dynamically inserted here -->
+        <!-- Results are dynamically inserted here -->
     </section>
 
     <footer>
@@ -53,5 +53,9 @@
     </footer>
 
     <script src="websiteapp.js"></script>
+    <script>
+        // Display all resources on initial page load
+        displayAllResources();
+    </script>
 </body>
 </html>
