@@ -11,7 +11,7 @@ body {
     background-color: #f4f4f9; /* Light background */
     line-height: 1.6;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     padding: 2rem;
 }
@@ -19,9 +19,10 @@ body {
 /* Header Section: Big First Page */
 header {
     background-color: #fafafa; /* Light background for header */
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
     text-align: center;
     width: 100%;
+    margin-bottom: 2rem; /* Space between header and filter */
 }
 
 header h1 {
@@ -49,25 +50,17 @@ header h2 {
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    margin-top: 2rem;
-    flex-wrap: wrap;
 }
 
-/* Left Side - Filter & Resources List */
-#left-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-right: 2rem;
-}
-
+/* Left Column (Filter Section) */
 #questionnaire {
     background-color: #fff;
     padding: 1rem;
     margin-top: 1rem;
-    border-top: 1px solid #ddd;
     width: 100%;
-    max-width: 400px; /* Adjusted width */
+    max-width: 1000px;
+    margin-bottom: 2rem; /* Space between filter and results list */
+    border-top: 1px solid #ddd;
 }
 
 #questionnaire h2 {
@@ -77,6 +70,9 @@ header h2 {
 }
 
 form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 100%;
     margin: 0 auto;
     padding: 1rem;
@@ -91,16 +87,18 @@ label {
     font-size: 1.1rem;
     margin: 0.5rem 0;
     color: #333;
+    width: 100%;
 }
 
 select, button {
-    width: 100%;
+    width: 45%; /* Make the select dropdowns and button take up equal space */
     padding: 0.7rem;
     font-size: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     background-color: #fafafa;
     color: #333;
+    margin-top: 0.5rem;
 }
 
 button {
@@ -108,15 +106,15 @@ button {
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-/* Right Side - Results Section */
+/* Right Column (Results Section) */
 #results {
-    flex: 2;
     padding: 1rem;
     text-align: left;
     margin-top: 1rem;
