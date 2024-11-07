@@ -7,8 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333; /* Default dark text */
-    background-color: #f4f4f9; /* Light background */
+    color: #333;
+    background-color: #f4f4f9;
     line-height: 1.6;
     display: flex;
     justify-content: center;
@@ -16,35 +16,29 @@ body {
     padding: 2rem;
 }
 
-/* Header Section: Big First Page */
+/* Header Section */
 header {
-    background-color: #fafafa; /* Light background for header */
-    padding: 3rem 1rem;
     text-align: center;
-    width: 100%;
-    margin-bottom: 2rem; /* Space between header and filter */
+    margin-bottom: 2rem;
 }
 
 header h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-header p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #666;
+    margin-bottom: 0.5rem;
 }
 
 header h2 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333;
+    margin: 1rem 0;
 }
 
-/* New Layout Section */
+header h3 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Container Section */
 #container {
     display: flex;
     flex-direction: column;
@@ -52,107 +46,63 @@ header h2 {
     max-width: 1200px;
 }
 
-/* Left Column (Filter Section) */
-#questionnaire {
-    background-color: #fff;
+/* Filter Box and List Section */
+#resource-box {
+    border: 1px solid #ddd;
     padding: 1rem;
-    margin-top: 1rem;
-    width: 100%;
-    max-width: 1000px;
-    margin-bottom: 2rem; /* Space between filter and results list */
-    border-top: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
-#questionnaire h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-form {
+#filter-form {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0 auto;
     padding: 1rem;
-    text-align: left;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-label {
-    display: block;
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-    color: #333;
-    width: 100%;
-}
-
-select, button {
-    width: 45%; /* Make the select dropdowns and button take up equal space */
-    padding: 0.7rem;
-    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    background-color: #fafafa;
-    color: #333;
-    margin-top: 0.5rem;
 }
 
-button {
+#filter-form label {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+#filter-form select,
+#filter-form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#filter-form select {
+    width: 48%;
+}
+
+#filter-form button {
+    width: 100%;
     background-color: #007BFF;
     color: #fff;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 100%;
 }
 
-button:hover {
+#filter-form button:hover {
     background-color: #0056b3;
 }
 
-/* Right Column (Results Section) */
+/* Results Section */
 #results {
-    padding: 1rem;
-    text-align: left;
-    margin-top: 1rem;
+    padding: 1rem 0;
 }
 
-#results h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-#results ul {
+#resource-list {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-#results li {
-    margin-bottom: 1rem;
+#resource-list li {
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
     color: #333;
-}
-
-#results textarea {
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ddd;
-    background-color: #f4f4f4;
-    color: #333;
-    resize: none;
-}
-
-/* Footer Section */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #eee;
-    margin-top: 2rem;
-    color: #666;
+    text-align: left;
 }

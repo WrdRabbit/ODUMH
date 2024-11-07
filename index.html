@@ -7,20 +7,19 @@
     <link rel="stylesheet" href="websitestyles.css">
 </head>
 <body>
+    <!-- Main Title Header -->
     <header>
         <h1>Welcome to the Online Directory for United Mental Health</h1>
-        <p>Find tailored mental health resources based on your specific needs.</p>
-    </header>
-    <header> 
-        <h2>This resource repository is built to make help accessible. It focuses on diverse mental health resources for all demographics, because everyone deserves help.</h2>
+        <h2>Find tailored mental health resources based on your specific needs.</h2>
+        <h3>This resource repository is built to make help accessible. It focuses on diverse mental health resources for all demographics, because everyone deserves help.</h3>
     </header>
 
+    <!-- Filter and Resources Section -->
     <section id="container">
-        <!-- Filter and Resources Section -->
-        <section id="questionnaire">
-            <h2>Filter Resources by Issue and Support Type</h2>
-            <form id="resource-form">
-                <label for="issue">What are you currently struggling with?</label>
+        <!-- Filter Box and Resource List -->
+        <div id="resource-box">
+            <form id="filter-form">
+                <label for="issue">Filter by Issue:</label>
                 <select name="issue" id="issue">
                     <option value="">Select an issue</option>
                     <option value="anxiety">Anxiety</option>
@@ -32,7 +31,7 @@
                     <option value="other">Other</option>
                 </select>
 
-                <label for="support">What kind of support are you looking for?</label>
+                <label for="support">Filter by Support Type:</label>
                 <select name="support" id="support">
                     <option value="">Select support type</option>
                     <option value="therapist">Online Therapists/Counselors</option>
@@ -41,14 +40,19 @@
                     <option value="supportGroups">Online Support Groups</option>
                     <option value="education">Educational Resources</option>
                 </select>
-
                 <button type="button" onclick="findResources()">Filter Resources</button>
             </form>
-        </section>
 
-        <!-- Results Section -->
-        <div id="results">
-            <!-- Results will be dynamically inserted here -->
+            <!-- Results Section -->
+            <div id="results">
+                <!-- Results will be dynamically inserted here -->
+                <ul id="resource-list">
+                    <li>Anxiety Resources</li>
+                    <li>Depression Help</li>
+                    <li>Support Groups</li>
+                    <!-- Add alphabetized links here -->
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -58,7 +62,6 @@
 
     <script src="websiteapp.js"></script>
     <script>
-        // Display all resources on initial page load
         displayAllResources();
     </script>
 </body>
