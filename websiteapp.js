@@ -26,7 +26,7 @@ const resourceMap = {
         ],
         affordable: [
             { name: "BetterHelp", link: "https://www.betterhelp.com", description: "Better Help has financial aid options to make therapy more affordable" },
-            { name: "Crisis Text Line", link: "https://www.crisistextline.org", description: "24/7 support through text for people in crisis." }
+            { name: "Crisis Text Line", link: "https://www.crisistextline.org", description: "Free 24/7 support through text. Text 'HELLO' to 741741" }
         ]
     },
     depression: {
@@ -107,12 +107,17 @@ const resourceMap = {
 function displayAllResources() {
     const resultsSection = document.getElementById("results");
     let allResources = [];
+    const resourceNames = new Set(); // To track unique resource names
 
-    // Gather all resources from all issues and support types
+    // Gather all unique resources from all issues and support types
     for (const issue in resourceMap) {
         for (const supportType in resourceMap[issue]) {
             resourceMap[issue][supportType].forEach(resource => {
-                allResources.push({ ...resource, issue, supportType });
+                // Only add the resource if its name isn't already in the Set
+                if (!resourceNames.has(resource.name)) {
+                    allResources.push({ ...resource, issue, supportType });
+                    resourceNames.add(resource.name); // Add to Set to avoid duplicates
+                }
             });
         }
     }
@@ -120,7 +125,7 @@ function displayAllResources() {
     // Sort resources alphabetically
     allResources.sort((a, b) => a.name.localeCompare(b.name));
 
-    // Display all resources
+    // Display all unique resources
     let responseHtml = "<h2>All Resources</h2><ul>";
     allResources.forEach(resource => {
         responseHtml += `
