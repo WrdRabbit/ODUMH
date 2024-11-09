@@ -5,34 +5,24 @@ const resourceMap = {
             { name: "BetterHelp", link: "https://www.betterhelp.com", description: "Online therapy services with various therapists." },
             { name: "Talkspace", link: "https://www.talkspace.com", description: "Connects users with licensed therapists through an app." },
             { name: "Amwell", link: "https://www.amwell.com", description: "Telehealth service offering mental health counseling." },
-            { name: "MDLive", link: "https://www.mdlive.com", description: "Online therapy for anxiety, depression, and more." },
-            { name: "Regain", link: "https://www.regain.us", description: "Online therapy platform focusing on relationships and mental health." },
-            { name: "TherapyPortal", link: "https://www.therapyportal.com", description: "Connects users to licensed therapists for virtual counseling." }
+            { name: "MDLive", link: "https://www.mdlive.com", description: "Online therapy for anxiety, depression, and more." }
         ],
         hotlines: [
             { name: "Crisis Text Line", link: "https://www.crisistextline.org", description: "24/7 support through text for people in crisis." },
-            { name: "SAMHSA Helpline", link: "https://www.samhsa.gov/find-help/national-helpline", description: "Free, confidential 24/7 treatment referrals and information." },
-            { name: "NAMI Helpline", link: "https://www.nami.org/help", description: "Helpline providing mental health support and information." },
-            { name: "Mental Health America Hotline", link: "https://mhanational.org", description: "Mental health hotline offering information and referrals." }
+            { name: "SAMHSA Helpline", link: "https://www.samhsa.gov/find-help/national-helpline", description: "Free, confidential 24/7 treatment referrals and information." }
         ],
         apps: [
             { name: "Headspace", link: "https://www.headspace.com", description: "Meditation app with guided sessions for relaxation." },
             { name: "Calm", link: "https://www.calm.com", description: "App for relaxation, sleep, and mindfulness." },
-            { name: "Sanvello", link: "https://www.sanvello.com", description: "App with tools for managing anxiety and depression." },
-            { name: "Moodfit", link: "https://www.getmoodfit.com", description: "Mental health app offering tools for anxiety and depression." },
-            { name: "Happify", link: "https://www.happify.com", description: "App with activities and games to reduce anxiety and stress." }
+            { name: "Sanvello", link: "https://www.sanvello.com", description: "App with tools for managing anxiety and depression." }
         ],
         supportGroups: [
             { name: "7 Cups", link: "https://www.7cups.com", description: "Online support with trained listeners." },
-            { name: "Anxiety Support Group on Reddit", link: "https://www.reddit.com/r/Anxiety/", description: "A community on Reddit for anxiety support." },
-            { name: "Supportiv", link: "https://www.supportiv.com", description: "Peer support chat rooms for mental health and anxiety." },
-            { name: "Anxiety and Depression Association of America", link: "https://adaa.org", description: "Support groups and resources for anxiety and depression." }
+            { name: "Anxiety Support Group on Reddit", link: "https://www.reddit.com/r/Anxiety/", description: "A community on Reddit for anxiety support." }
         ],
         education: [
             { name: "ADAA", link: "https://adaa.org", description: "Resources and information on anxiety and depression." },
-            { name: "Mind", link: "https://www.mind.org.uk", description: "Mental health charity offering information on anxiety." },
-            { name: "Mental Health Foundation", link: "https://www.mentalhealth.org.uk", description: "UK-based mental health charity offering resources and research." },
-            { name: "Anxiety Canada", link: "https://www.anxietycanada.com", description: "Resources and tools for managing anxiety." }
+            { name: "Mind", link: "https://www.mind.org.uk", description: "Mental health charity offering information on anxiety." }
         ]
     },
     depression: {
@@ -96,6 +86,7 @@ const resourceMap = {
             { name: "Grief.com", link: "https://www.grief.com", description: "Resources and articles on the process of grief and loss." }
         ]
     }
+    // Add more categories as needed
 };
 
 // Function to display all resources in alphabetical order
@@ -121,12 +112,56 @@ function displayAllResources() {
         responseHtml += `
             <li>
                 <a href="${resource.link}" target="_blank">${resource.name}</a>
-                <br>
-                <em>${resource.issue} - ${resource.supportType}</em><br>
-                ${resource.description}
-            </li>
-        `;
+                <p><textarea readonly>${resource.description}</textarea></p>
+            </li>`;
     });
     responseHtml += "</ul>";
     resultsSection.innerHTML = responseHtml;
 }
+
+// Function to filter resources based on issue and support type
+function findResources() {
+    const issue = document.getElementById("issue").value;
+    const support = document.getElementById("support").value;
+    const resultsSection = document.getElementById("results");
+
+    // Clear previous results
+    resultsSection.innerHTML = "";
+
+    let filteredResources = [];
+
+    // Filter resources based on the issue and support type selected
+    for (const resourceIssue in resourceMap) {
+        if (issue && resourceIssue !== issue) continue;
+
+        for (const supportType in resourceMap[resourceIssue]) {
+            if (support && supportType !== support) continue;
+
+            resourceMap[resourceIssue][supportType].forEach(resource => {
+                filteredResources.push({ ...resource, issue: resourceIssue, supportType });
+            });
+        }
+    }
+
+    // Display filtered resources
+    if (filteredResources.length > 0) {
+        let responseHtml = "<h2>Filtered Resources</h2><ul>";
+        filteredResources.forEach(resource => {
+            responseHtml += `
+                <li>
+                    <a href="${resource.link}" target="_blank">${resource.name}</a>
+                    <br>
+                    <em>${resource.issue} - ${resource.supportType}</em><br>
+                    ${resource.description}
+                </li>
+            `;
+        });
+        responseHtml += "</ul>";
+        resultsSection.innerHTML = responseHtml;
+    } else {
+        resultsSection.innerHTML = "<p>No resources found for the selected filters.</p>";
+    }
+}
+
+// Initial call to display all resources alphabetically
+displayAllResources();
