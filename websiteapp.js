@@ -23,6 +23,10 @@ const resourceMap = {
         education: [
             { name: "ADAA", link: "https://adaa.org", description: "Resources and information on anxiety and depression." },
             { name: "Mind", link: "https://www.mind.org.uk", description: "Mental health charity offering information on anxiety." }
+        ],
+        affordable: [
+            { name: "BetterHelp", link: "https://www.betterhelp.com", description: "Better Help has financial aid options to make therapy more affordable" },
+            { name: "Crisis Text Line", link: "https://www.crisistextline.org", description: "24/7 support through text for people in crisis." }
         ]
     },
     depression: {
@@ -50,6 +54,10 @@ const resourceMap = {
             { name: "Mental Health America", link: "https://mhanational.org", description: "Education and resources on mental health and depression." },
             { name: "National Institute of Mental Health", link: "https://www.nimh.nih.gov", description: "Research and resources on depression and mental health." },
             { name: "Verywell Mind", link: "https://www.verywellmind.com", description: "Articles and guides on depression and other mental health issues." }
+        ],
+        affordable: [
+            {name: "Open Path Psychotherapy Collective", link: "https://openpathcollective.org/", description: "Offers affordable in-person and online therapy sessions for a flat fee of $30–$60."},
+            { name: "7 Cups", link: "https://www.7cups.com", description: "Provides free access to trained volunteer listeners for emotional support." }
         ]
     },
     addiction: {
@@ -67,6 +75,9 @@ const resourceMap = {
         ],
         education: [
             { name: "National Institute on Drug Abuse (NIDA)", link: "https://www.drugabuse.gov", description: "Information and research on drug addiction and abuse." }
+        ],
+        affordable: [
+            {name: "SMART Recovery", link: "https://smartrecovery.org/", description: "Free online support groups for addiction recovery with a science-based approach."}
         ]
     },
     grief_loss: {
@@ -84,6 +95,9 @@ const resourceMap = {
         ],
         education: [
             { name: "Grief.com", link: "https://www.grief.com", description: "Resources and articles on the process of grief and loss." }
+        ],
+        affordable: [
+            { name: "Option B", link: "https://optionb.org/", description: "A free online community and resource hub for resilience and coping with grief."}
         ]
     }
     // Add more categories as needed
