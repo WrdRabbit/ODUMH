@@ -8,6 +8,43 @@
     margin: 0 auto;
 }
 
+/* Style for About the Directory button */
+.about-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.about-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for About Page Content */
+#about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.about-text-box {
+    max-width: 600px;
+    padding: 2rem;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+}
+
 /* Header Section */
 header {
     background-color: #fafafa;
