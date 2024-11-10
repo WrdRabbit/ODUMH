@@ -7,64 +7,63 @@
     <link rel="stylesheet" href="websitestyles.css">
 </head>
 <body>
+    <!-- Full-Width Header -->
+    <header>
+        <h1>Welcome to the Online Directory for United Mental Health</h1>
+        <h2>Find tailored mental health resources based on your specific needs.</h2>
+        <h3>This resource repository is built to make help accessible. It focuses on diverse mental health resources for all demographics, because everyone deserves help.</h3>
+    </header>
 
     <!-- Navigation Tabs at the Top Right -->
     <nav class="nav-tabs">
         <a href="index.html" class="tab active">Directory</a>
         <a href="about.html" class="tab">About</a>
     </nav>
-    <header>
-        <!-- Main Title Header-->
-        <h1>Welcome to the Online Directory for United Mental Health1</h1>
-        <h2>Find tailored mental health resources based on your specific needs.</h2>
-        <h3>This resource repository is built to make help accessible. It focuses on diverse mental health resources for all demographics, because everyone deserves help.</h3>
-    </header>
-    <!-- Central Content Container -->
-    <div id="main-container">
 
-        <!-- Filter and Resources Section -->
-        <section id="filter-resources">
-            <!-- Filter Box -->
-            <form id="filter-form">
-                <label for="issue">Filter by Issue:</label>
-                <select name="issue" id="issue">
-                    <option value="">Select an issue</option>
-                    <option value="anxiety">Anxiety</option>
-                    <option value="depression">Depression</option>
-                    <option value="addiction">Addiction</option>
-                    <option value="relationship-issues">Relationship Issues</option>
-                    <option value="grief">Grief/Loss</option>
-                    <option value="other">Other</option>
-                </select>
+    <!-- Filter Form Section -->
+    <section id="filter-section">
+        <form id="filter-form">
+            <label for="issue">Filter by Issue:</label>
+            <select name="issue" id="issue">
+                <option value="">Select an issue</option>
+                <option value="anxiety">Anxiety</option>
+                <option value="depression">Depression</option>
+                <option value="addiction">Addiction</option>
+                <option value="relationship-issues">Relationship Issues</option>
+                <option value="grief">Grief/Loss</option>
+                <option value="other">Other</option>
+            </select>
 
-                <label for="support">Filter by Support Type:</label>
-                <select name="support" id="support">
-                    <option value="">Select support type</option>
-                    <option value="therapist">Online Therapists/Counselors</option>
-                    <option value="hotlines">Hotlines</option>
-                    <option value="apps">Mental Health Apps</option>
-                    <option value="supportGroups">Online Support Groups</option>
-                    <option value="education">Educational Resources</option>
-                    <option value="affordable">Affordable Options</option>
-                </select>
-                <button type="button" onclick="findResources()">Filter Resources</button>
-            </form>
+            <label for="support">Filter by Support Type:</label>
+            <select name="support" id="support">
+                <option value="">Select support type</option>
+                <option value="therapist">Online Therapists/Counselors</option>
+                <option value="hotlines">Hotlines</option>
+                <option value="apps">Mental Health Apps</option>
+                <option value="supportGroups">Online Support Groups</option>
+                <option value="education">Educational Resources</option>
+                <option value="affordable">Affordable Options</option>
+            </select>
+            <button type="button" onclick="findResources()">Filter Resources</button>
+        </form>
+    </section>
 
-            <!-- Results Section -->
-            <div id="results">
-                <h2>All Resources</h2>
-                <ul id="resource-list">
-                    <li>Anxiety Resources</li>
-                    <li>Depression Help</li>
-                    <li>Support Groups</li>
-                    <!-- Add alphabetized links here -->
-                </ul>
-            </div>
-        </section>
-    </div>
+    <!-- Resource List Section -->
+    <section id="resource-section">
+        <h2>All Resources</h2>
+        <ul id="resource-list">
+            <li>Anxiety Resources</li>
+            <li>Depression Help</li>
+            <li>Support Groups</li>
+            <!-- Add alphabetized links here -->
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
         <p>© 2024 Mental Health Resource Finder</p>
     </footer>
+
     <script src="websiteapp.js"></script>
 </body>
 </html>

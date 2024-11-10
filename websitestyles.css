@@ -1,22 +1,38 @@
-/* General Styles */
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #715b5b;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
+}
+
+/* Full-Width Header */
+header {
+    width: 100%;
+    background-color: #715b5b;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header h2, header h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 /* Navigation Tabs */
 .nav-tabs {
-    position: absolute;
-    top: 20px;
-    right: 20px;
     display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-color: #f4f4f9;
     gap: 10px;
 }
 
@@ -39,82 +55,49 @@ body {
     font-weight: bold;
 }
 
-/* Header Section */
-header {
-    text-align: center;
+/* Filter Section Styling */
+#filter-section {
     width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-header h2, header h3 {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-/* Main Content Container */
-#main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 800px;
     padding: 2rem;
-    background-color: #f4f4f9;
-    border-radius: 8px;
+    background-color: #fff;
     box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Filter and Resources Section */
-#filter-resources {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Filter Box */
 #filter-form {
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 100%;
-    padding: 1rem;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
 }
 
-/* Dropdowns and Button */
 select, button {
     width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
 }
 
-/* Results Section */
-#results {
+/* Resource List Section */
+#resource-section {
     width: 100%;
-    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f4f4f9;
+    box-sizing: border-box;
 }
 
-#results h2 {
+#resource-section h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 #resource-list {
     list-style-type: none;
     padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #resource-list li {
@@ -124,12 +107,10 @@ select, button {
 
 /* Footer */
 footer {
-    text-align: center;
+    width: 100%;
     padding: 1rem;
+    text-align: center;
     background-color: #333;
     color: #fff;
-    width: 100%;
-    margin-top: 2rem;
-    border-radius: 8px;
-    max-width: 800px;
+    box-sizing: border-box;
 }
