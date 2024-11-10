@@ -32,7 +32,7 @@ body {
 
 .tab {
     padding: 0.5rem 1rem;
-    background-color: #f4f4f9; /* Light background for tabs */
+    background-color: #715b5b; /* Light background for tabs */
     color: #333;
     text-decoration: none;
     border-radius: 5px;
@@ -47,10 +47,6 @@ body {
 .tab.active {
     background-color: #d8b4b4; /* Active tab color to highlight the current page */
     font-weight: bold;
-}
-
-.about-button:hover {
-    background-color: #0056b3;
 }
 
 /* Style for About Page Content */
