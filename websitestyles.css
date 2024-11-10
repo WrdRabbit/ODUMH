@@ -6,6 +6,7 @@
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    background-color: #715b5b; /* New dark off-pink background */
 }
 
 body {
@@ -54,7 +55,7 @@ body {
 
 /* Style for About Page Content */
 #about-content {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     min-height: 70vh;
@@ -73,7 +74,7 @@ body {
 
 /* Header Section */
 header {
-    background-color: #fafafa;
+    background-color: #715b5b;
     padding: 3rem 1rem;
     text-align: center;
     width: 100%;
