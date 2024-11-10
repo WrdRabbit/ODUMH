@@ -1,4 +1,4 @@
-/* Reset container layout to stack vertically */
+/* Reset container layout to stack vertcally */
 #container {
     display: flex;
     flex-direction: column;
