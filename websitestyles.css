@@ -8,18 +8,6 @@
     margin: 0 auto;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333; /* Default dark text */
-    background-color: #715b5b; /* New dark off-pink background */
-    line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 2rem;
-}
-
-
 /* Style for Navigation Tabs */
 .nav-tabs {
     position: absolute;
@@ -31,7 +19,6 @@ body {
 
 .tab {
     padding: 0.5rem 1rem;
-    background-color: #715b5b; /* Light background for tabs */
     color: #333;
     text-decoration: none;
     border-radius: 5px;
