@@ -1,14 +1,17 @@
-/* Reset container layout to stack vertcally */
-#container {
+/* Background and Layout */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #715b5b;
+    line-height: 1.6;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    margin: 0;
 }
 
-/* Style for Navigation Tabs */
+/* Navigation Tabs */
 .nav-tabs {
     position: absolute;
     top: 20px;
@@ -20,6 +23,7 @@
 .tab {
     padding: 0.5rem 1rem;
     color: #333;
+    background-color: #f4f4f9;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -27,49 +31,44 @@
 }
 
 .tab:hover {
-    background-color: #e0e0e0; /* Slightly darker hover color */
+    background-color: #e0e0e0;
 }
 
 .tab.active {
-    background-color: #d8b4b4; /* Active tab color to highlight the current page */
+    background-color: #d8b4b4;
     font-weight: bold;
-}
-
-/* Style for About Page Content */
-#about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-}
-
-.about-text-box {
-    max-width: 600px;
-    padding: 2rem;
-    background-color: #f4f4f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #333;
 }
 
 /* Header Section */
 header {
-    background-color: #715b5b;
-    padding: 3rem 1rem;
-    text-align: center;
     width: 100%;
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #715b5b;
+    color: #fff;
+    box-sizing: border-box;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 header h2, header h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+}
+
+/* Container for Filter and Resources */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    box-sizing: border-box;
 }
 
 /* Filter and Resource Box */
@@ -80,6 +79,7 @@ header h2, header h3 {
     margin-top: 2rem;
     border: 1px solid #ddd;
     text-align: left;
+    border-radius: 8px;
 }
 
 #filter-form {
@@ -112,4 +112,15 @@ select, button {
 #resource-list li {
     padding: 0.5rem 0;
     font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 8px;
 }
