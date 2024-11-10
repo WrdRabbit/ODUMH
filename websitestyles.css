@@ -1,15 +1,13 @@
-/* Background and Layout */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #715b5b;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 2rem;
-    margin: 0;
-    width: 100%;
     min-height: 100vh;
 }
 
@@ -25,7 +23,7 @@ body {
 .tab {
     padding: 0.5rem 1rem;
     color: #333;
-    background-color: #ccc; /* Non-active tab color */
+    background-color: #ccc;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -37,59 +35,62 @@ body {
 }
 
 .tab.active {
-    background-color: #d8b4b4; /* Active tab color */
+    background-color: #d8b4b4;
     font-weight: bold;
 }
 
-/* Header Section */
-header {
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #715b5b;
-    color: #fff;
-    box-sizing: border-box;
-    margin-bottom: 1rem;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-header h2, header h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-/* Container for Filter and Resources */
-#container {
+/* Main Content Container */
+#main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 800px;
+    padding: 2rem;
+    background-color: #f4f4f9;
+    border-radius: 8px;
     box-sizing: border-box;
 }
 
-/* Filter and Resource Box */
-#resource-box {
-    background-color: #fff;
-    padding: 1.5rem;
-    width: 100%;
-    margin-top: 1rem;
-    border: 1px solid #ddd;
-    text-align: left;
-    border-radius: 8px;
+/* Header Section */
+header {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+header h2, header h3 {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Filter and Resources Section */
+#filter-resources {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Filter Box */
 #filter-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
+/* Dropdowns and Button */
 select, button {
     width: 100%;
     padding: 0.5rem;
@@ -98,7 +99,8 @@ select, button {
 
 /* Results Section */
 #results {
-    margin-top: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 #results h2 {
@@ -123,7 +125,7 @@ footer {
     background-color: #333;
     color: #fff;
     width: 100%;
-    max-width: 800px;
     margin-top: 2rem;
     border-radius: 8px;
+    max-width: 800px;
 }
