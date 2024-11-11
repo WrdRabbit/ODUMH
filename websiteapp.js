@@ -103,13 +103,15 @@ const resourceMap = {
     // Add more categories as needed
 };
 
-// Define resources in a JavaScript array for example
-const resourceList = [
-    { name: "Anxiety Resources", description: "Resources for managing anxiety." },
-    { name: "Depression Help", description: "Resources for managing depression." },
-    { name: "Support Groups", description: "Support groups for various mental health topics." },
-    // Add more resources as needed
-];
+// Flatten resourceMap into an array of resources
+let resourceList = [];
+for (const category in resourceMap) {
+    for (const supportType in resourceMap[category]) {
+        resourceMap[category][supportType].forEach(resource => {
+            resourceList.push({ ...resource, category, supportType });
+        });
+    }
+}
 
 // Settings for pagination
 let currentPage = 1;
@@ -139,10 +141,14 @@ function displayResources() {
     const end = start + resourcesPerPage;
     const pageResources = resourceList.slice(start, end);
 
-    // Create list items for the current page
+    // Display the resources on the current page
     pageResources.forEach(resource => {
         const listItem = document.createElement("li");
-        listItem.innerHTML = `<strong>${resource.name}</strong>: ${resource.description}`;
+        listItem.innerHTML = `
+            <strong>${resource.name}</strong>:
+            <a href="${resource.link}" target="_blank">${resource.description}</a>
+            <br><em>${resource.category} - ${resource.supportType}</em>
+        `;
         resultsSection.appendChild(listItem);
     });
 
@@ -177,6 +183,7 @@ function toggleSortOrder() {
 window.onload = function () {
     displayResources();
 };
+
 
 
 // Function to filter resources based on issue and support type
