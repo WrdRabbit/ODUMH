@@ -20,7 +20,7 @@
         <a href="about.html" class="tab">About</a>
     </nav>
 
-    <!-- Filter Form Section -->
+    <!-- Filter and Control Section -->
     <section id="filter-section">
         <form id="filter-form">
             <label for="issue">Filter by Issue:</label>
@@ -46,6 +46,14 @@
             </select>
             <button type="button" onclick="findResources()">Filter Resources</button>
         </form>
+
+        <!-- Pagination and Toggle Controls -->
+        <div id="controls-section">
+            <button onclick="previousPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+            <button onclick="toggleSortOrder()">Toggle Alphabetical Order</button>
+            <span id="page-number">Page 1</span>
+        </div>
     </section>
 
     <!-- Resource List Section -->
@@ -54,18 +62,8 @@
         <ul id="resource-list">
             <!-- Resources will be loaded here by JavaScript -->
         </ul>
-    
-        <!-- Pagination Controls -->
-        <div id="pagination-controls">
-            <button onclick="previousPage()">Previous</button>
-            <span id="page-number">Page 1</span>
-            <button onclick="nextPage()">Next</button>
-        </div>
-    
-        <!-- Toggle Sort Order Button -->
-        <button onclick="toggleSortOrder()">Toggle Alphabetical Order</button>
     </section>
-    
+
     <!-- Footer Section -->
     <footer>
         <p>© 2024 Mental Health Resource Finder</p>
