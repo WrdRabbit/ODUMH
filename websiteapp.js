@@ -103,40 +103,81 @@ const resourceMap = {
     // Add more categories as needed
 };
 
-// Function to display all resources in alphabetical order
-function displayAllResources() {
-    const resultsSection = document.getElementById("results");
-    let allResources = [];
-    const resourceNames = new Set(); // To track unique resource names
+// Define resources in a JavaScript array for example
+const resourceList = [
+    { name: "Anxiety Resources", description: "Resources for managing anxiety." },
+    { name: "Depression Help", description: "Resources for managing depression." },
+    { name: "Support Groups", description: "Support groups for various mental health topics." },
+    // Add more resources as needed
+];
 
-    // Gather all unique resources from all issues and support types
-    for (const issue in resourceMap) {
-        for (const supportType in resourceMap[issue]) {
-            resourceMap[issue][supportType].forEach(resource => {
-                // Only add the resource if its name isn't already in the Set
-                if (!resourceNames.has(resource.name)) {
-                    allResources.push({ ...resource, issue, supportType });
-                    resourceNames.add(resource.name); // Add to Set to avoid duplicates
-                }
-            });
+// Settings for pagination
+let currentPage = 1;
+const resourcesPerPage = 15;
+let isReversed = false;
+
+// Function to sort resources in alphabetical or reverse alphabetical order
+function sortResources() {
+    resourceList.sort((a, b) => {
+        if (isReversed) {
+            return b.name.localeCompare(a.name);
+        } else {
+            return a.name.localeCompare(b.name);
         }
-    }
-
-    // Sort resources alphabetically
-    allResources.sort((a, b) => a.name.localeCompare(b.name));
-
-    // Display all unique resources
-    let responseHtml = "<h2>All Resources</h2><ul>";
-    allResources.forEach(resource => {
-        responseHtml += `
-            <li>
-                <a href="${resource.link}" target="_blank">${resource.name}</a>
-                <p><textarea readonly>${resource.description}</textarea></p>
-            </li>`;
     });
-    responseHtml += "</ul>";
-    resultsSection.innerHTML = responseHtml;
 }
+
+// Function to display resources for the current page
+function displayResources() {
+    const resultsSection = document.getElementById("resource-list");
+    resultsSection.innerHTML = ""; // Clear previous resources
+
+    sortResources(); // Ensure resources are sorted before displaying
+
+    // Calculate start and end index for current page
+    const start = (currentPage - 1) * resourcesPerPage;
+    const end = start + resourcesPerPage;
+    const pageResources = resourceList.slice(start, end);
+
+    // Create list items for the current page
+    pageResources.forEach(resource => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `<strong>${resource.name}</strong>: ${resource.description}`;
+        resultsSection.appendChild(listItem);
+    });
+
+    // Update pagination controls
+    document.getElementById("page-number").innerText = `Page ${currentPage}`;
+}
+
+// Function to go to the next page
+function nextPage() {
+    if (currentPage * resourcesPerPage < resourceList.length) {
+        currentPage++;
+        displayResources();
+    }
+}
+
+// Function to go to the previous page
+function previousPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        displayResources();
+    }
+}
+
+// Function to toggle the reverse alphabetical order and reload resources
+function toggleSortOrder() {
+    isReversed = !isReversed;
+    currentPage = 1; // Reset to first page
+    displayResources();
+}
+
+// Initial call to display resources on page load
+window.onload = function () {
+    displayResources();
+};
+
 
 // Function to filter resources based on issue and support type
 function findResources() {
