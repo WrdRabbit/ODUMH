@@ -103,12 +103,18 @@ const resourceMap = {
     // Add more categories as needed
 };
 
-// Flatten resourceMap into an array of resources
+// Flatten resourceMap into an array of unique resources
 let resourceList = [];
+const uniqueNames = new Set(); // Track unique resource names
+
 for (const category in resourceMap) {
     for (const supportType in resourceMap[category]) {
         resourceMap[category][supportType].forEach(resource => {
-            resourceList.push({ ...resource, category, supportType });
+            // Only add the resource if its name isn't already in the Set
+            if (!uniqueNames.has(resource.name)) {
+                resourceList.push({ ...resource, category, supportType });
+                uniqueNames.add(resource.name); // Add to Set to prevent duplicates
+            }
         });
     }
 }
@@ -183,8 +189,6 @@ function toggleSortOrder() {
 window.onload = function () {
     displayResources();
 };
-
-
 
 // Function to filter resources based on issue and support type
 function findResources() {
