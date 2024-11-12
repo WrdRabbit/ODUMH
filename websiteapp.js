@@ -106,7 +106,6 @@ const resourceMap = {
 // Flatten resourceMap into an array of unique resources
 let resourceList = [];
 const uniqueNames = new Set(); // Track unique resource names
-
 for (const category in resourceMap) {
     for (const supportType in resourceMap[category]) {
         resourceMap[category][supportType].forEach(resource => {
@@ -119,19 +118,16 @@ for (const category in resourceMap) {
     }
 }
 
-// Settings for pagination
+// Settings for pagination and filtering
 let currentPage = 1;
 const resourcesPerPage = 15;
 let isReversed = false;
+let filteredResources = [...resourceList]; // Initially, the filtered list includes all resources
 
 // Function to sort resources in alphabetical or reverse alphabetical order
 function sortResources() {
-    resourceList.sort((a, b) => {
-        if (isReversed) {
-            return b.name.localeCompare(a.name);
-        } else {
-            return a.name.localeCompare(b.name);
-        }
+    filteredResources.sort((a, b) => {
+        return isReversed ? b.name.localeCompare(a.name) : a.name.localeCompare(b.name);
     });
 }
 
@@ -145,7 +141,7 @@ function displayResources() {
     // Calculate start and end index for current page
     const start = (currentPage - 1) * resourcesPerPage;
     const end = start + resourcesPerPage;
-    const pageResources = resourceList.slice(start, end);
+    const pageResources = filteredResources.slice(start, end);
 
     // Display the resources on the current page
     pageResources.forEach(resource => {
@@ -164,7 +160,7 @@ function displayResources() {
 
 // Function to go to the next page
 function nextPage() {
-    if (currentPage * resourcesPerPage < resourceList.length) {
+    if (currentPage * resourcesPerPage < filteredResources.length) {
         currentPage++;
         displayResources();
     }
@@ -185,10 +181,27 @@ function toggleSortOrder() {
     displayResources();
 }
 
+// Filter resources based on issue and support type
+function findResources() {
+    const issue = document.getElementById("issue").value;
+    const support = document.getElementById("support").value;
+
+    // Filter resources based on selected issue and support type
+    filteredResources = resourceList.filter(resource => {
+        const matchesIssue = !issue || resource.category === issue;
+        const matchesSupport = !support || resource.supportType === support;
+        return matchesIssue && matchesSupport;
+    });
+
+    currentPage = 1; // Reset to first page
+    displayResources(); // Display filtered results
+}
+
 // Initial call to display resources on page load
 window.onload = function () {
     displayResources();
 };
+
 
 // Function to filter resources based on issue and support type
 function findResources() {
