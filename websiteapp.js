@@ -109,7 +109,6 @@ const uniqueNames = new Set(); // Track unique resource names
 for (const category in resourceMap) {
     for (const supportType in resourceMap[category]) {
         resourceMap[category][supportType].forEach(resource => {
-            // Only add the resource if its name isn't already in the Set
             if (!uniqueNames.has(resource.name)) {
                 resourceList.push({ ...resource, category, supportType });
                 uniqueNames.add(resource.name); // Add to Set to prevent duplicates
@@ -181,7 +180,7 @@ function toggleSortOrder() {
     displayResources();
 }
 
-// Filter resources based on issue and support type
+// Function to filter resources based on issue and support type
 function findResources() {
     const issue = document.getElementById("issue").value;
     const support = document.getElementById("support").value;
@@ -201,51 +200,3 @@ function findResources() {
 window.onload = function () {
     displayResources();
 };
-
-
-// Function to filter resources based on issue and support type
-function findResources() {
-    const issue = document.getElementById("issue").value;
-    const support = document.getElementById("support").value;
-    const resultsSection = document.getElementById("results");
-
-    // Clear previous results
-    resultsSection.innerHTML = "";
-
-    let filteredResources = [];
-
-    // Filter resources based on the issue and support type selected
-    for (const resourceIssue in resourceMap) {
-        if (issue && resourceIssue !== issue) continue;
-
-        for (const supportType in resourceMap[resourceIssue]) {
-            if (support && supportType !== support) continue;
-
-            resourceMap[resourceIssue][supportType].forEach(resource => {
-                filteredResources.push({ ...resource, issue: resourceIssue, supportType });
-            });
-        }
-    }
-
-    // Display filtered resources
-    if (filteredResources.length > 0) {
-        let responseHtml = "<h2>Filtered Resources</h2><ul>";
-        filteredResources.forEach(resource => {
-            responseHtml += `
-                <li>
-                    <a href="${resource.link}" target="_blank">${resource.name}</a>
-                    <br>
-                    <em>${resource.issue} - ${resource.supportType}</em><br>
-                    ${resource.description}
-                </li>
-            `;
-        });
-        responseHtml += "</ul>";
-        resultsSection.innerHTML = responseHtml;
-    } else {
-        resultsSection.innerHTML = "<p>No resources found for the selected filters.</p>";
-    }
-}
-
-// Initial call to display all resources alphabetically
-displayAllResources();
