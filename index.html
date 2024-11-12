@@ -20,9 +20,9 @@
         <a href="about.html" class="tab">About</a>
     </nav>
 
-    <!-- Filter and Control Section -->
+    <!-- Filter Section Layer -->
     <section id="filter-section">
-        <form id="filter-form">
+        <div id="filter-controls">
             <label for="issue">Filter by Issue:</label>
             <select name="issue" id="issue">
                 <option value="">Select an issue</option>
@@ -44,21 +44,26 @@
                 <option value="education">Educational Resources</option>
                 <option value="affordable">Affordable Options</option>
             </select>
-            <button type="button" onclick="findResources()">Filter Resources</button>
-        </form>
-
-        <!-- Pagination and Toggle Controls -->
-        <div id="controls-section">
-            <button onclick="previousPage()">Previous</button>
-            <button onclick="nextPage()">Next</button>
-            <button onclick="toggleSortOrder()">Toggle Alphabetical Order</button>
-            <span id="page-number">Page 1</span>
+            
+            <!-- Alphabetical Order Toggle -->
+            <button id="sort-toggle" onclick="toggleSortOrder()">Toggle Alphabetical Order</button>
         </div>
+    </section>
+
+    <!-- All Resources Header Layer -->
+    <section id="resource-header">
+        <h2>All Resources</h2>
+    </section>
+
+    <!-- Pagination Controls Layer -->
+    <section id="pagination-controls">
+        <button onclick="previousPage()">Previous</button>
+        <span id="page-number">Page 1</span>
+        <button onclick="nextPage()">Next</button>
     </section>
 
     <!-- Resource List Section -->
     <section id="resource-section">
-        <h2>All Resources</h2>
         <ul id="resource-list">
             <!-- Resources will be loaded here by JavaScript -->
         </ul>
