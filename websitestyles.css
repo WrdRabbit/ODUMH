@@ -39,7 +39,7 @@ header h2, header h3 {
 .tab {
     padding: 0.5rem 1rem;
     color: #333;
-    background-color: #ccc;
+    background-color: #d8b4b4;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -51,7 +51,7 @@ header h2, header h3 {
 }
 
 .tab.active {
-    background-color: #d8b4b4;
+    background-color: #b19595;
     font-weight: bold;
 }
 
@@ -115,7 +115,7 @@ header h2, header h3 {
 
 #page-number {
     font-size: 1rem;
-    color: #333;
+    color: #e0e0e0;
 }
 
 /* Resource List Section Styling */
@@ -157,14 +157,14 @@ footer {
 
 #filter-controls select, #sort-toggle, #filter-button {
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 4rem;
 }
 
 #filter-button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
