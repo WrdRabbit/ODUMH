@@ -209,7 +209,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
-    background-color: #715b5b;
+    background-color: #d8b4b4;
     color: #fff;
 }
 
@@ -227,7 +227,7 @@ footer {
 }
 
 .tab.active {
-    background-color: #333;
+    background-color: #ad8f8f;
     font-weight: bold;
 }
 
