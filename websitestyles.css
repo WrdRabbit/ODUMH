@@ -155,16 +155,13 @@ footer {
     align-items: center;
 }
 
-#filter-controls select, #sort-toggle, #filter-button {
-    padding: 0.5rem;
-    font-size: 1rem;
-}
-
 #filter-button {
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 25px;
+    padding: 1rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
