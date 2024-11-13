@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="websitestyles.css">
 </head>
 <body>
+    <!-- Navigation Tabs at the Top Right -->
+    <nav class="nav-tabs">
+        <a href="index.html" class="tab active">Directory</a>
+        <a href="about.html" class="tab">About</a>
+    </nav>   
+
     <!-- Full-Width Header -->
     <header>
         <h1>Welcome to the Online Directory for United Mental Health</h1>
@@ -14,15 +20,11 @@
         <h3>This resource repository is built to make help accessible. It focuses on diverse mental health resources for all demographics, because everyone deserves help.</h3>
     </header>
 
-    <!-- Navigation Tabs at the Top Right -->
-    <nav class="nav-tabs">
-        <a href="index.html" class="tab active">Directory</a>
-        <a href="about.html" class="tab">About</a>
-    </nav>
-
     <!-- Filter Section Layer -->
     <section id="filter-section">
         <div id="filter-controls">
+            <!-- Filter button-->
+            <button id="filter-button" onclick="findResources()">Filter</button>
             <label for="issue">Filter by Issue:</label>
             <select name="issue" id="issue">
                 <option value="">Select an issue</option>
@@ -45,8 +47,7 @@
                 <option value="affordable">Affordable Options</option>
             </select>
 
-            <!-- Filter and Alphabetical Order Toggle Buttons -->
-            <button id="filter-button" onclick="findResources()">Filter</button>
+            <!-- Order Toggle Buttons -->
             <button id="sort-toggle" onclick="toggleSortOrder()">Toggle Alphabetical Order</button>
         </div>
     </section>
