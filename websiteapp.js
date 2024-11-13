@@ -103,16 +103,24 @@ const resourceMap = {
     // Add more categories as needed
 };
 
-// Flatten resourceMap into an array of unique resources
+// Flatten resourceMap into an array of unique resources for the total list
 let resourceList = [];
-const uniqueNames = new Set(); // Track unique resource names
+const uniqueNames = new Set(); // Track unique resource names for the total list
+
+// This array will hold all resources, including duplicates in different categories
+let allResources = [];
+
+// Populate resourceList with unique names for the total list and allResources for filtering
 for (const category in resourceMap) {
     for (const supportType in resourceMap[category]) {
         resourceMap[category][supportType].forEach(resource => {
+            // Add to resourceList if the name is unique (for the total list)
             if (!uniqueNames.has(resource.name)) {
                 resourceList.push({ ...resource, category, supportType });
-                uniqueNames.add(resource.name); // Add to Set to prevent duplicates
+                uniqueNames.add(resource.name); // Mark name as seen
             }
+            // Add to allResources regardless, to allow duplicates in filtered view
+            allResources.push({ ...resource, category, supportType });
         });
     }
 }
@@ -121,7 +129,7 @@ for (const category in resourceMap) {
 let currentPage = 1;
 const resourcesPerPage = 15;
 let isReversed = false;
-let filteredResources = [...resourceList]; // Initially, the filtered list includes all resources
+let filteredResources = [...resourceList]; // Initially, filtered list shows the total list
 
 // Function to sort resources in alphabetical or reverse alphabetical order
 function sortResources() {
@@ -185,8 +193,8 @@ function findResources() {
     const issue = document.getElementById("issue").value;
     const support = document.getElementById("support").value;
 
-    // Filter resources based on selected issue and support type
-    filteredResources = resourceList.filter(resource => {
+    // Filter allResources (including duplicates in different categories) based on selected issue and support type
+    filteredResources = allResources.filter(resource => {
         const matchesIssue = !issue || resource.category === issue;
         const matchesSupport = !support || resource.supportType === support;
         return matchesIssue && matchesSupport;
