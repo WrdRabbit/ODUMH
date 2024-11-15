@@ -80,7 +80,7 @@ const resourceMap = {
             {name: "SMART Recovery", link: "https://smartrecovery.org/", description: "Free online support groups for addiction recovery with a science-based approach."}
         ]
     },
-    grief_loss: {
+    grief: {
         therapist: [
             { name: "Grief Counseling Center", link: "https://www.griefcounselingcenter.com", description: "Therapy focused on individuals dealing with grief and loss." }
         ],
@@ -99,7 +99,8 @@ const resourceMap = {
         affordable: [
             { name: "Option B", link: "https://optionb.org/", description: "A free online community and resource hub for resilience and coping with grief."}
         ]
-    }
+    },
+    
     // Add more categories as needed
 };
 
