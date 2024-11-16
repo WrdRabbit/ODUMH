@@ -25,8 +25,12 @@ const resourceMap = {
             { name: "Mind", link: "https://www.mind.org.uk", description: "Mental health charity offering information on anxiety." }
         ],
         affordable: [
-            { name: "BetterHelp", link: "https://www.betterhelp.com", description: "Better Help has financial aid options to make therapy more affordable" },
+            { name: "BetterHelp", link: "https://www.betterhelp.com", description: "Better Help has financial aid options to make therapy more affordable." },
             { name: "Crisis Text Line", link: "https://www.crisistextline.org", description: "Free 24/7 support through text. Text 'HELLO' to 741741" }
+        ],
+        language: [
+            {name: "Crisis Text Line", link: "https://www.crisistextline.org", description: "(Supports English and Spanish) 24/7 support through text. Text 'HELLO' to 741741"},
+            {name: "Mindshift CBT App", Link: "https://www.anxietycanada.com/resources/mindshift-cbt", description: "(Supports English and French) A mobile app to help users manage anxiety, supports French speakers."}
         ]
     },
     depression: {
@@ -56,8 +60,12 @@ const resourceMap = {
             { name: "Verywell Mind", link: "https://www.verywellmind.com", description: "Articles and guides on depression and other mental health issues." }
         ],
         affordable: [
-            {name: "Open Path Psychotherapy Collective", link: "https://openpathcollective.org/", description: "Offers affordable in-person and online therapy sessions for a flat fee of $30–$60."},
+            { name: "Open Path Psychotherapy Collective", link: "https://openpathcollective.org/", description: "Offers affordable in-person and online therapy sessions for a flat fee of $30–$60."},
             { name: "7 Cups", link: "https://www.7cups.com", description: "Provides free access to trained volunteer listeners for emotional support." }
+        ],
+        language: [
+            {name:"7 Cups", link: "https://www.7cups.com", description: "(Supports English, Spanish, French, German and more) Offers an online community and access to therapists."},
+            {name: "Samaritans", link: "https://www.samaritans.org", description: "(Supports Spanish, French and more languages through international network) Provides 24/7 emotional support via phone and email for those dealing with depression, distress and suicide prevention."}
         ]
     },
     addiction: {
@@ -78,6 +86,9 @@ const resourceMap = {
         ],
         affordable: [
             {name: "SMART Recovery", link: "https://smartrecovery.org/", description: "Free online support groups for addiction recovery with a science-based approach."}
+        ],
+        language: [
+            {name: "Alcoholics Anonymous (AA)", link: "https://www.aa.org", description: "(Supports over 100 languages) Offers global online and in-person support meetings, available in various languages, for individuals seeking recovery from alcohol addiction." }
         ]
     },
     grief: {
@@ -99,8 +110,7 @@ const resourceMap = {
         affordable: [
             { name: "Option B", link: "https://optionb.org/", description: "A free online community and resource hub for resilience and coping with grief."}
         ]
-    },
-    
+    }
     // Add more categories as needed
 };
 
