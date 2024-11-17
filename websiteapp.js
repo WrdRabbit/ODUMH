@@ -88,7 +88,8 @@ const resourceMap = {
             {name: "SMART Recovery", link: "https://smartrecovery.org/", description: "Free online support groups for addiction recovery with a science-based approach."}
         ],
         language: [
-            {name: "Alcoholics Anonymous (AA)", link: "https://www.aa.org", description: "(Supports over 100 languages) Offers global online and in-person support meetings, available in various languages, for individuals seeking recovery from alcohol addiction." }
+            {name: "Alcoholics Anonymous (AA)", link: "https://www.aa.org", description: "(Supports over 100 languages) Offers global online and in-person support meetings, available in various languages, for individuals seeking recovery from alcohol addiction." },
+            {name: "SMART Recovery", link: "https://smartrecovery.org/", description: "(Supports English, Spanish, and several other European languages) Offers multilingual resources for those recovering from addiction and substance abuse as well as a recovery program."}
         ]
     },
     grief: {
@@ -109,6 +110,10 @@ const resourceMap = {
         ],
         affordable: [
             { name: "Option B", link: "https://optionb.org/", description: "A free online community and resource hub for resilience and coping with grief."}
+        ],
+        language: [
+            { name: "Option B", link: "https://optionb.org/", description: "(Supports English, Spanish and Portugese) An online community offering resources for those dealing with grief and loss."},
+            { name: "Grief.com (by David Kessler)", Link: "https://grief.com/", description: "(Has resources in English and some Spanish)  A comprehensive resource for people dealing with grief and loss."}
         ]
     }
     // Add more categories as needed
