@@ -209,7 +209,35 @@ function findResources() {
     const issue = document.getElementById("issue").value;
     const support = document.getElementById("support").value;
 
-    // Filter allResources (including duplicates in different categories) based on selected issue and support type
+    // Clear language info and general resources by default
+    document.getElementById("language-info-section").style.display = "none";
+    document.getElementById("general-resources-section").style.display = "none";
+
+    if (support === "language") {
+        // Display available languages for the selected issue or all issues
+        let languageInfo = "Available languages include: ";
+        const languageSet = new Set();
+
+        allResources.forEach(resource => {
+            if (!issue || resource.category === issue) {
+                if (resource.supportType === "language") {
+                    const match = resource.description.match(/\((.*?)\)/); // Extract languages from the description
+                    if (match) {
+                        languageSet.add(match[1]);
+                    }
+                }
+            }
+        });
+
+        languageInfo += Array.from(languageSet).join(", ") || "None available.";
+        document.getElementById("language-info").innerText = languageInfo;
+        document.getElementById("language-info-section").style.display = "block";
+
+        // Show general resources section
+        document.getElementById("general-resources-section").style.display = "block";
+    }
+
+    // Filter resources for display
     filteredResources = allResources.filter(resource => {
         const matchesIssue = !issue || resource.category === issue;
         const matchesSupport = !support || resource.supportType === support;

@@ -44,11 +44,15 @@
                 <option value="affordable">Affordable Options</option>
                 <option value="language">Language Accessible</option>
             </select>
-            <!-- Filter button-->
             <button id="filter-button" onclick="findResources()">Filter</button>
-            <!-- Order Toggle Buttons -->
             <button id="sort-toggle" onclick="toggleSortOrder()">↑↓</button>
         </div>
+    </section>
+
+    <!-- Language Info Section -->
+    <section id="language-info-section" style="display: none;">
+        <h3>Available Languages</h3>
+        <p id="language-info"></p>
     </section>
 
     <!-- All Resources Header Layer -->
@@ -67,6 +71,17 @@
     <section id="resource-section">
         <ul id="resource-list">
             <!-- Resources will be loaded here by JavaScript -->
+        </ul>
+    </section>
+
+    <!-- General Resources Section -->
+    <section id="general-resources-section" style="display: none;">
+        <h3>General Resources</h3>
+        <p>If you couldn’t find resources in your language, please check out the following general mental health directories:</p>
+        <ul>
+            <li><a href="https://www.who.int" target="_blank">World Health Organization (WHO) Directory</a></li>
+            <li><a href="https://www.iasp.info/resources/Crisis_Centres/" target="_blank">Suicide Prevention Helplines Worldwide</a></li>
+            <li><a href="https://www.therapyroute.com" target="_blank">TherapyRoute Mental Health Directory</a></li>
         </ul>
     </section>
 
