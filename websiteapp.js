@@ -88,6 +88,7 @@ const resourceMap = {
             {name: "SMART Recovery", link: "https://smartrecovery.org/", description: "Free online support groups for addiction recovery with a science-based approach."}
         ],
         language: [
+            {header:"Languages available: Over 100 languages including Spanish and other European languages"},
             {name: "Alcoholics Anonymous (AA)", link: "https://www.aa.org", description: "(Supports over 100 languages) Offers global online and in-person support meetings, available in various languages, for individuals seeking recovery from alcohol addiction." },
             {name: "SMART Recovery", link: "https://smartrecovery.org/", description: "(Supports English, Spanish, and several other European languages) Offers multilingual resources for those recovering from addiction and substance abuse as well as a recovery program."}
         ]
