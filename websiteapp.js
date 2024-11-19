@@ -29,7 +29,7 @@ const resourceMap = {
             { name: "Crisis Text Line", link: "https://www.crisistextline.org", description: "Free 24/7 support through text. Text 'HELLO' to 741741" }
         ],
         language: [
-            {name: "Crisis Text Line", link: "https://www.crisistextline.org", description: "(Supports English and Spanish) 24/7 support through text. Text 'HELLO' to 741741"},
+            {name: "Crisis Text Line", link: "https://www.crisistextline.org", description: "(Supports English and Spanish) 24/7 support through text. Text 'Hello' or 'HOLA' to 741741"},
             {name: "Mindshift CBT App", Link: "https://www.anxietycanada.com/resources/mindshift-cbt", description: "(Supports English and French) A mobile app to help users manage anxiety, supports French speakers."}
         ]
     },
