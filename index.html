@@ -40,9 +40,18 @@
                 <option value="apps">Mental Health Apps</option>
                 <option value="supportGroups">Online Support Groups</option>
                 <option value="education">Educational Resources</option>
-                <option value="affordable">Affordable Options</option>
-                <option value="language">Language Accessible</option>
             </select>
+
+            <!-- Language Accessible Filter -->
+            <label>
+                <input type="checkbox" id="language-accessible"> Language Accessible
+            </label>
+
+            <!-- Affordable Options Filter -->
+            <label>
+                <input type="checkbox" id="affordable-options"> Affordable Options
+            </label>
+
             <button id="filter-button" onclick="findResources()">Filter</button>
             <button id="sort-toggle" onclick="toggleSortOrder()">↑↓</button>
         </div>

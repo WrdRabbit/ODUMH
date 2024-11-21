@@ -204,24 +204,24 @@ function toggleSortOrder() {
     displayResources();
 }
 
-// Function to filter resources based on issue and support type
+// Function to filter resources based on issue, support type, and additional filters
 function findResources() {
     const issue = document.getElementById("issue").value;
     const support = document.getElementById("support").value;
+    const isLanguageAccessible = document.getElementById("language-accessible").checked;
+    const isAffordable = document.getElementById("affordable-options").checked;
 
     // Default: Hide general resources section
     document.getElementById("general-resources-section").style.display = "none";
 
-    if (support === "language") {
-        // Display the general resources section when the "language" filter is selected
-        document.getElementById("general-resources-section").style.display = "block";
-    }
-
-    // Filter resources based on selected issue and support type
+    // Filter resources based on selected filters
     filteredResources = allResources.filter(resource => {
         const matchesIssue = !issue || resource.category === issue;
         const matchesSupport = !support || resource.supportType === support;
-        return matchesIssue && matchesSupport;
+        const matchesLanguage = !isLanguageAccessible || resource.category === "language";
+        const matchesAffordable = !isAffordable || resource.category === "affordable";
+
+        return matchesIssue && matchesSupport && matchesLanguage && matchesAffordable;
     });
 
     currentPage = 1; // Reset to first page
