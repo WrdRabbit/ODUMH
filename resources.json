@@ -37,8 +37,9 @@
     {
         "name": "SAMHSA Helpline",
         "link": "https://www.samhsa.gov/find-help/national-helpline",
-        "tags": ["hotlines", "anxiety", "addiction"],
+        "tags": ["hotlines", "anxiety", "addiction", "affordable"],
         "descriptions": {
+            "affordable":"Free, confidential 24/7 treatment referrals and information.",
             "default": "Free, confidential 24/7 treatment referrals and information."
         }
     },
@@ -294,24 +295,6 @@
         "descriptions": {
             "language": "Supports users searching for multilingual therapists globally.",
             "default": "Directory for finding licensed mental health professionals."
-        }
-    },
-    {
-        "name": "SAMHSA National Helpline",
-        "link": "https://www.samhsa.gov/find-help/national-helpline",
-        "tags": ["hotlines", "addiction", "affordable"],
-        "descriptions": {
-            "affordable": "Free confidential 24/7 helpline for addiction and substance use treatment.",
-            "default": "Provides referrals to addiction treatment centers and support services."
-        }
-    },
-    {
-        "name": "Option B",
-        "link": "https://optionb.org/",
-        "tags": ["supportGroups", "grief", "affordable", "language"],
-        "descriptions": {
-            "language": "Offers support in English, Spanish, and Portuguese.",
-            "default": "Online community and resource hub for resilience and coping with grief."
         }
     },
     {
