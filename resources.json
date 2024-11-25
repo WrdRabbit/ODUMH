@@ -1,0 +1,325 @@
+[
+    {
+        "name": "BetterHelp",
+        "link": "https://www.betterhelp.com",
+        "tags": ["therapist", "anxiety", "depression", "affordable"],
+        "descriptions": {
+            "affordable": "Offers financial aid to make therapy more accessible.",
+            "default": "Online therapy platform connecting users with licensed therapists."
+        }
+    },
+    {
+        "name": "Talkspace",
+        "link": "https://www.talkspace.com",
+        "tags": ["therapist", "anxiety", "depression"],
+        "descriptions": {
+            "default": "Connects users with licensed therapists through an app."
+        }
+    },
+    {
+        "name": "Amwell",
+        "link": "https://www.amwell.com",
+        "tags": ["therapist", "anxiety"],
+        "descriptions": {
+            "default": "Telehealth service offering mental health counseling."
+        }
+    },
+    {
+        "name": "Crisis Text Line",
+        "link": "https://www.crisistextline.org",
+        "tags": ["hotlines", "anxiety", "affordable", "language"],
+        "descriptions": {
+            "language": "Supports English and Spanish. Text 'Hello' or 'HOLA' to 741741 for 24/7 support.",
+            "affordable": "Free 24/7 support through text. Text 'HELLO' to 741741.",
+            "default": "24/7 crisis support through text for individuals in need."
+        }
+    },
+    {
+        "name": "SAMHSA Helpline",
+        "link": "https://www.samhsa.gov/find-help/national-helpline",
+        "tags": ["hotlines", "anxiety", "addiction"],
+        "descriptions": {
+            "default": "Free, confidential 24/7 treatment referrals and information."
+        }
+    },
+    {
+        "name": "Headspace",
+        "link": "https://www.headspace.com",
+        "tags": ["apps", "anxiety"],
+        "descriptions": {
+            "default": "Meditation app with guided sessions for relaxation."
+        }
+    },
+    {
+        "name": "Calm",
+        "link": "https://www.calm.com",
+        "tags": ["apps", "anxiety", "depression"],
+        "descriptions": {
+            "default": "App for relaxation, sleep, and mindfulness."
+        }
+    },
+    {
+        "name": "Sanvello",
+        "link": "https://www.sanvello.com",
+        "tags": ["apps", "anxiety", "depression"],
+        "descriptions": {
+            "default": "App with tools for managing anxiety and depression."
+        }
+    },
+    {
+        "name": "7 Cups",
+        "link": "https://www.7cups.com",
+        "tags": ["supportGroups", "anxiety", "depression", "language", "affordable"],
+        "descriptions": {
+            "language": "Supports multiple languages including English, Spanish, French, and more.",
+            "affordable": "Free access to trained volunteer listeners for emotional support.",
+            "default": "Online support with trained listeners and access to therapists."
+        }
+    },
+    {
+        "name": "Anxiety Support Group on Reddit",
+        "link": "https://www.reddit.com/r/Anxiety/",
+        "tags": ["supportGroups", "anxiety"],
+        "descriptions": {
+            "default": "A community on Reddit for anxiety support."
+        }
+    },
+    {
+        "name": "ADAA",
+        "link": "https://adaa.org",
+        "tags": ["education", "anxiety"],
+        "descriptions": {
+            "default": "Resources and information on anxiety and depression."
+        }
+    },
+    {
+        "name": "Mind",
+        "link": "https://www.mind.org.uk",
+        "tags": ["education", "anxiety", "depression"],
+        "descriptions": {
+            "default": "Mental health charity offering information on anxiety and depression."
+        }
+    },
+    {
+        "name": "National Suicide Prevention Lifeline",
+        "link": "https://suicidepreventionlifeline.org",
+        "tags": ["hotlines", "depression"],
+        "descriptions": {
+            "default": "A 24/7 hotline for those in distress or in need of emotional support."
+        }
+    },
+    {
+        "name": "Lifeline Crisis Chat",
+        "link": "https://www.crisischat.org",
+        "tags": ["hotlines", "depression"],
+        "descriptions": {
+            "default": "Chat-based support for individuals dealing with depression."
+        }
+    },
+    {
+        "name": "Youper",
+        "link": "https://www.youper.ai",
+        "tags": ["apps", "depression"],
+        "descriptions": {
+            "default": "Mental health app with mood tracking and AI-driven support."
+        }
+    },
+    {
+        "name": "Alcoholics Anonymous (AA)",
+        "link": "https://www.aa.org",
+        "tags": ["supportGroups", "addiction", "language"],
+        "descriptions": {
+            "language": "Supports over 100 languages through global online and in-person meetings.",
+            "default": "Support group for individuals recovering from alcohol addiction."
+        }
+    },
+    {
+        "name": "SMART Recovery",
+        "link": "https://smartrecovery.org/",
+        "tags": ["supportGroups", "addiction", "affordable", "language"],
+        "descriptions": {
+            "language": "Supports English, Spanish, and several other European languages.",
+            "affordable": "Free online support groups for addiction recovery with a science-based approach.",
+            "default": "Offers multilingual resources for those recovering from addiction."
+        }
+    },
+    {
+        "name": "Option B",
+        "link": "https://optionb.org/",
+        "tags": ["supportGroups", "grief", "affordable", "language"],
+        "descriptions": {
+            "language": "Supports English, Spanish, and Portuguese speakers.",
+            "default": "A free online community and resource hub for resilience and coping with grief."
+        }
+    },
+    {
+        "name": "Grief.com",
+        "link": "https://www.grief.com",
+        "tags": ["education", "grief", "language"],
+        "descriptions": {
+            "default": "Resources and articles on the process of grief and loss."
+        }
+    },
+
+    {
+        "name": "Open Path Psychotherapy Collective",
+        "link": "https://openpathcollective.org/",
+        "tags": ["therapist", "depression", "affordable"],
+        "descriptions": {
+            "affordable": "Offers affordable therapy sessions with a flat fee between $30-$60.",
+            "default": "Connects individuals with affordable in-person and online therapy sessions."
+        }
+    },
+    {
+        "name": "Samaritans",
+        "link": "https://www.samaritans.org",
+        "tags": ["hotlines", "depression", "language"],
+        "descriptions": {
+            "language": "Supports Spanish, French, and several other languages through an international network.",
+            "default": "Provides 24/7 emotional support via phone and email."
+        }
+    },
+    {
+        "name": "Daylio",
+        "link": "https://daylio.net",
+        "tags": ["apps", "depression"],
+        "descriptions": {
+            "default": "Mood tracking app that helps users manage depression and build better habits."
+        }
+    },
+    {
+        "name": "Beyond Blue",
+        "link": "https://www.beyondblue.org.au",
+        "tags": ["supportGroups", "depression"],
+        "descriptions": {
+            "default": "Support groups and resources for individuals managing depression."
+        }
+    },
+    {
+        "name": "Grief Counseling Center",
+        "link": "https://www.griefcounselingcenter.com",
+        "tags": ["therapist", "grief"],
+        "descriptions": {
+            "default": "Therapy focused on helping individuals cope with grief and loss."
+        }
+    },
+    {
+        "name": "Grief Works",
+        "link": "https://www.griefworkscounseling.com",
+        "tags": ["apps", "grief"],
+        "descriptions": {
+            "default": "An app providing support and guidance for processing grief and loss."
+        }
+    },
+    {
+        "name": "Grief Support on Reddit",
+        "link": "https://www.reddit.com/r/GriefSupport/",
+        "tags": ["supportGroups", "grief"],
+        "descriptions": {
+            "default": "An online community for individuals experiencing grief."
+        }
+    },
+    {
+        "name": "National Institute on Drug Abuse (NIDA)",
+        "link": "https://www.drugabuse.gov",
+        "tags": ["education", "addiction"],
+        "descriptions": {
+            "default": "Research and information on drug addiction and abuse prevention."
+        }
+    },
+    {
+        "name": "Sober Grid",
+        "link": "https://www.sobergrid.com",
+        "tags": ["apps", "addiction"],
+        "descriptions": {
+            "default": "App for connecting with a sober community and tracking recovery progress."
+        }
+    },
+    {
+        "name": "Hazelden Betty Ford",
+        "link": "https://www.hazeldenbettyford.org",
+        "tags": ["therapist", "addiction"],
+        "descriptions": {
+            "default": "Addiction treatment and recovery programs tailored to individuals' needs."
+        }
+    },
+    {
+        "name": "Verywell Mind",
+        "link": "https://www.verywellmind.com",
+        "tags": ["education", "depression", "anxiety"],
+        "descriptions": {
+            "default": "Articles and guides on mental health topics, including anxiety and depression."
+        }
+    },
+    {
+        "name": "Mindshift CBT App",
+        "link": "https://www.anxietycanada.com/resources/mindshift-cbt",
+        "tags": ["apps", "anxiety", "language"],
+        "descriptions": {
+            "language": "Supports English and French to help users manage anxiety.",
+            "default": "Cognitive Behavioral Therapy app for managing anxiety."
+        }
+    },
+    {
+        "name": "Happify",
+        "link": "https://www.happify.com",
+        "tags": ["apps", "depression"],
+        "descriptions": {
+            "default": "Science-backed app designed to help users manage depression and build resilience."
+        }
+    },
+    {
+        "name": "SMART Recovery",
+        "link": "https://smartrecovery.org/",
+        "tags": ["supportGroups", "addiction", "affordable", "language"],
+        "descriptions": {
+            "language": "Supports multiple languages, including English and Spanish.",
+            "affordable": "Free online support groups for addiction recovery.",
+            "default": "Science-based addiction recovery program with multilingual options."
+        }
+    },
+    {
+        "name": "World Health Organization (WHO) Directory",
+        "link": "https://www.who.int",
+        "tags": ["education", "language"],
+        "descriptions": {
+            "language": "Supports multiple languages with global health and mental health resources.",
+            "default": "Comprehensive directory for international health resources."
+        }
+    },
+    {
+        "name": "TherapyRoute Mental Health Directory",
+        "link": "https://www.therapyroute.com",
+        "tags": ["therapist", "language"],
+        "descriptions": {
+            "language": "Supports users searching for multilingual therapists globally.",
+            "default": "Directory for finding licensed mental health professionals."
+        }
+    },
+    {
+        "name": "SAMHSA National Helpline",
+        "link": "https://www.samhsa.gov/find-help/national-helpline",
+        "tags": ["hotlines", "addiction", "affordable"],
+        "descriptions": {
+            "affordable": "Free confidential 24/7 helpline for addiction and substance use treatment.",
+            "default": "Provides referrals to addiction treatment centers and support services."
+        }
+    },
+    {
+        "name": "Option B",
+        "link": "https://optionb.org/",
+        "tags": ["supportGroups", "grief", "affordable", "language"],
+        "descriptions": {
+            "language": "Offers support in English, Spanish, and Portuguese.",
+            "default": "Online community and resource hub for resilience and coping with grief."
+        }
+    },
+    {
+        "name": "Anxiety Canada",
+        "link": "https://www.anxietycanada.com",
+        "tags": ["education", "anxiety"],
+        "descriptions": {
+            "default": "Comprehensive tools and resources to help manage anxiety."
+        }
+    }
+]
