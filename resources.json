@@ -304,5 +304,109 @@
         "descriptions": {
             "default": "Comprehensive tools and resources to help manage anxiety."
         }
-    }
-]
+    },
+        {
+            "name": "Online-Therapy.com",
+            "link": "https://www.online-therapy.com",
+            "description": "Offers evidence-based CBT therapy sessions with licensed therapists.",
+            "tags": ["therapist", "anxiety", "depression", "affordable"]
+          },
+          {
+            "name": "Theravive",
+            "link": "https://www.theravive.com",
+            "description": "Directory of licensed counselors and therapists for various mental health concerns.",
+            "tags": ["therapist", "addiction", "grief", "language"]
+          },
+          {
+            "name": "Teen Line",
+            "link": "https://www.teenline.org",
+            "description": "Free confidential hotline service for teens dealing with stress, depression, or grief.",
+            "tags": ["hotline", "anxiety", "depression", "grief", "language"]
+          },
+          {
+            "name": "Veterans Crisis Line",
+            "link": "https://www.veteranscrisisline.net",
+            "description": "Provides 24/7 crisis support for U.S. veterans and their families.",
+            "tags": ["hotline", "depression", "grief", "language"]
+          },
+          {
+            "name": "Refuge Recovery",
+            "link": "https://www.refugerecovery.org",
+            "description": "A Buddhist-inspired support group for those recovering from addiction.",
+            "tags": ["supportGroups", "addiction", "affordable"]
+          },
+          {
+            "name": "SMART Recovery for Teens",
+            "link": "https://www.smartrecovery.org/teens",
+            "description": "Science-based addiction recovery support for teens.",
+            "tags": ["supportGroups", "addiction", "language"]
+          },
+          {
+            "name": "*Black Mental Health Alliance",
+            "link": "https://blackmentalhealth.com",
+            "description": "Provides culturally relevant resources for the Black community.",
+            "tags": ["education", "anxiety", "depression", "affordable"]
+          },
+          {
+            "name": "National Alliance on Mental Illness (NAMI)",
+            "link": "https://nami.org",
+            "description": "Educational resources and support groups for mental health awareness.",
+            "tags": ["education", "grief", "affordable", "language"]
+          },
+          {
+            "name": "Inclusive Therapists",
+            "link": "https://www.inclusivetherapists.com",
+            "description": "Connects clients with therapists specializing in marginalized communities.",
+            "tags": ["therapist", "anxiety", "depression", "language"]
+          },
+          {
+            "name": "*Asian Mental Health Collective",
+            "link": "https://www.asianmhc.org",
+            "description": "Support and education for mental health in Asian communities.",
+            "tags": ["education", "anxiety", "language"]
+          },
+          {
+            "name": "Parents of Addicted Loved Ones (PAL)",
+            "link": "https://palgroup.org",
+            "description": "Support group for family members of individuals struggling with addiction.",
+            "tags": ["supportGroups", "addiction", "grief"]
+          },
+          {
+            "name": "Circle of Security International",
+            "link": "https://www.circleofsecurityinternational.com",
+            "description": "Education for caregivers to better understand and support children’s emotional needs.",
+            "tags": ["education", "grief", "affordable"]
+          },
+          {
+            "name": "*Immigrant Women’s Health Center",
+            "link": "https://www.iwhc.org",
+            "description": "Offers multilingual mental health resources for immigrant women.",
+            "tags": ["education", "anxiety", "depression", "language"]
+          },
+          {
+            "name": "Trevor Project",
+            "link": "https://www.thetrevorproject.org",
+            "description": "LGBTQ+ youth support with 24/7 crisis intervention and educational resources.",
+            "tags": ["hotline", "depression", "grief", "language"]
+          },
+          {
+            "name": "Bereavement Counseling - Hospice Foundation",
+            "link": "https://hospicefoundation.org",
+            "description": "Counseling and education for those dealing with grief and loss.",
+            "tags": ["education", "grief", "affordable"]
+          },
+          {
+            "name": "Love is Respect",
+            "link": "https://www.loveisrespect.org",
+            "description": "24/7 support for young people dealing with abusive relationships.",
+            "tags": ["hotline", "anxiety", "grief", "affordable"]
+          },
+          {
+            "name": "Lifeline Australia",
+            "link": "https://www.lifeline.org.au",
+            "description": "24/7 crisis support and suicide prevention service in Australia.",
+            "tags": ["hotline", "depression", "affordable", "language"]
+          }
+        ]
+
+    
