@@ -240,3 +240,11 @@ footer {
     color: #fff;
     box-sizing: border-box;
 }
+#minority-header {
+    width: 100%;
+    background-color: #715b5b;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-sizing: border-box;
+}
