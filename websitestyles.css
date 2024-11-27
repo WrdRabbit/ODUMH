@@ -241,64 +241,59 @@ footer {
     box-sizing: border-box;
 }
 
-/* Page Title Styling */
-#minority-header {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f4f4f9;
-}
-
-#minority-header h1 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-#minority-header p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-/* Resource Grid Styling */
-#resource-grid {
+/* Grid layout for resources */
+.resource-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    background-color: #fff;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-/* Individual Resource Card */
+/* Styling for each resource card */
 .resource-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Resource title */
 .resource-card h3 {
-    font-size: 1.5rem;
+    margin-top: 0;
     color: #333;
 }
 
-.resource-card p {
-    font-size: 1rem;
-    color: #555;
-    margin: 1rem 0;
-}
-
-.resource-card a {
+/* Learn More button */
+.btn-learn-more {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: #715b5b;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    font-size: 0.9rem;
 }
 
-.resource-card a:hover {
-    background-color: #0056b3;
+.btn-learn-more:hover {
+    background-color: #5a4949;
+}
+
+/* Tags styling */
+.resource-tags {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.resource-tag {
+    background-color: #e0e0e0;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #333;
 }
