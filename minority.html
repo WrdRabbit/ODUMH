@@ -16,8 +16,49 @@
         </nav>
     </header>
 
-    <section id ="minority-header">
-        <h1>Resources For Minority Groups</h1>
+    <!-- Page Title -->
+    <section id="minority-header">
+        <h1>Resources for Minority Groups</h1>
+        <p>Explore mental health resources tailored to support specific racial and ethnic communities.</p>
     </section>
 
-<body>
+    <!-- Resource Section -->
+    <section id="resource-grid">
+        <!-- Resources will be dynamically loaded here -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="text-align: center;">© 2024 Mental Health Resource Finder</p>
+    </footer>
+
+    <!-- JavaScript to Load Resources -->
+    <script src="minorityResources.js"></script>
+    <script>
+        // Dynamically load resources
+        async function loadMinorityResources() {
+            try {
+                const response = await fetch("minorityResources.json");
+                const resources = await response.json();
+                const grid = document.getElementById("resource-grid");
+
+                // Create a grid layout for resources
+                resources.forEach(resource => {
+                    const resourceCard = document.createElement("div");
+                    resourceCard.classList.add("resource-card");
+                    resourceCard.innerHTML = `
+                        <h3>${resource.name}</h3>
+                        <p>${resource.description}</p>
+                        <a href="${resource.link}" target="_blank">Learn More</a>
+                    `;
+                    grid.appendChild(resourceCard);
+                });
+            } catch (error) {
+                console.error("Error loading resources:", error);
+            }
+        }
+
+        loadMinorityResources();
+    </script>
+</body>
+</html>
