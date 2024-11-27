@@ -148,64 +148,46 @@ footer {
     box-sizing: border-box;
 }
 
-/* Page Title Styling */
+/* Minorities Resource Page */
 #minority-header {
     text-align: center;
-    padding: 2rem;
-    background-color: #f4f4f9;
+    margin-bottom: 20px;
 }
 
-#minority-header h1 {
-    font-size: 2.5rem;
-    color: #333;
+.group {
+    margin-bottom: 30px;
 }
 
-#minority-header p {
-    font-size: 1.2rem;
-    color: #555;
+.group h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
-/* Resource Grid Styling */
-#resource-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    background-color: #fff;
-}
-
-/* Individual Resource Card */
-.resource-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1.5rem;
+#minority-resources ul {
+    list-style: none;
+    padding: 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.resource-card h3 {
-    font-size: 1.5rem;
-    color: #333;
+#minority-resources li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
 }
 
-.resource-card p {
-    font-size: 1rem;
-    color: #555;
-    margin: 1rem 0;
-}
-
-.resource-card a {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
+#minority-resources a {
+    font-size: 1.2rem;
+    color: #007BFF;
     text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
 }
 
-.resource-card a:hover {
-    background-color: #0056b3;
+#minority-resources a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1rem;
 }

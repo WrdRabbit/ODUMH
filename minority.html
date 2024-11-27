@@ -16,49 +16,48 @@
         </nav>
     </header>
 
-    <!-- Page Title -->
     <section id="minority-header">
         <h1>Resources for Minority Groups</h1>
-        <p>Explore mental health resources tailored to support specific racial and ethnic communities.</p>
+        <p>Explore resources specifically dedicated to supporting racial and ethnic minority communities.</p>
     </section>
 
-    <!-- Resource Section -->
-    <section id="resource-grid">
-        <!-- Resources will be dynamically loaded here -->
+    <!-- Minority Groups Section -->
+    <section id="minority-resources">
+        <div class="group" id="black-community">
+            <h2>Black Community</h2>
+            <ul id="black-resources-list">
+                <!-- Resources will be dynamically loaded here -->
+            </ul>
+        </div>
+
+        <div class="group" id="asian-community">
+            <h2>Asian Community</h2>
+            <ul id="asian-resources-list">
+                <!-- Resources will be dynamically loaded here -->
+            </ul>
+        </div>
+
+        <div class="group" id="latinx-community">
+            <h2>Latinx Community</h2>
+            <ul id="latinx-resources-list">
+                <!-- Resources will be dynamically loaded here -->
+            </ul>
+        </div>
+
+        <div class="group" id="indigenous-community">
+            <h2>Indigenous Community</h2>
+            <ul id="indigenous-resources-list">
+                <!-- Resources will be dynamically loaded here -->
+            </ul>
+        </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p style="text-align: center;">© 2024 Mental Health Resource Finder</p>
+        <p>© 2024 Mental Health Resource Finder</p>
     </footer>
 
-    <!-- JavaScript to Load Resources -->
-    <script src="Minorityapp.js"></script>
-    <script>
-        // Dynamically load resources
-        async function loadMinorityResources() {
-            try {
-                const response = await fetch("minorityResources.json");
-                const resources = await response.json();
-                const grid = document.getElementById("resource-grid");
-
-                // Create a grid layout for resources
-                resources.forEach(resource => {
-                    const resourceCard = document.createElement("div");
-                    resourceCard.classList.add("resource-card");
-                    resourceCard.innerHTML = `
-                        <h3>${resource.name}</h3>
-                        <p>${resource.description}</p>
-                        <a href="${resource.link}" target="_blank">Learn More</a>
-                    `;
-                    grid.appendChild(resourceCard);
-                });
-            } catch (error) {
-                console.error("Error loading resources:", error);
-            }
-        }
-
-        loadMinorityResources();
-    </script>
+    <!-- Link to the new app.js file -->
+    <script src="minorityapp.js"></script>
 </body>
 </html>
