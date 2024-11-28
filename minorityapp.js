@@ -1,5 +1,5 @@
 // Fetch the resources from the minority-resources.json file
-fetch('minority-resources.json')
+fetch("minority-resources.json")
   .then(response => response.json())
   .then(data => {
     // Populate the resources for each community
