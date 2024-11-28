@@ -32,7 +32,8 @@ header p {
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
-    background-color: #f4f4f9;
+    background-color: #715b5b;
+    color: #fff;
     gap: 10px;
 }
 
@@ -47,11 +48,11 @@ header p {
 }
 
 .tab:hover {
-    background-color: #e0e0e0;
+    background-color: #666;
 }
 
 .tab.active {
-    background-color: #b19595;
+    background-color: #ad8f8f;
     font-weight: bold;
 }
 
