@@ -1,50 +1,50 @@
 {
   "black-community": [
-    {
-      "name": "Black Mental Health Alliance",
-      "link": "https://blackmentalhealth.com",
-      "description": "Provides culturally relevant resources for the Black community."
-    },
-    {
-      "name": "Therapy for Black Girls",
-      "link": "https://www.therapyforblackgirls.com",
-      "description": "A space for Black women to find mental health support, therapists, and community."
-    }
-  ],
-  "asian-community": [
-    {
-      "name": "Asian Mental Health Collective",
-      "link": "https://www.asianmhc.org",
-      "description": "Support and education for mental health in Asian communities."
-    },
-    {
-      "name": "The National Asian American Pacific Islander Mental Health Association (NAAPIMHA)",
-      "link": "https://www.naapimha.org",
-      "description": "Promotes mental health and wellness across Asian American communities."
-    }
+      {
+          "name": "Black Mental Health Alliance",
+          "link": "https://blackmentalhealth.com",
+          "description": "Provides culturally relevant resources for the Black community."
+      },
+      {
+          "name": "Therapy for Black Girls",
+          "link": "https://www.therapyforblackgirls.com",
+          "description": "A space for Black women to find mental health support, therapists, and community."
+      }
   ],
   "latinx-community": [
-    {
-      "name": "Latino Mental Health Association",
-      "link": "https://www.latinomentalhealth.org",
-      "description": "Provides culturally appropriate resources and support for the Latino community."
-    },
-    {
-      "name": "Mental Health America - Latinx Support",
-      "link": "https://mhanational.org/issues/latinx-mental-health",
-      "description": "Resources and support to address mental health concerns in the Latinx community."
-    }
+      {
+          "name": "Latino Mental Health Association",
+          "link": "https://www.latinomentalhealth.org",
+          "description": "Provides culturally appropriate resources and support for the Latino community."
+      },
+      {
+          "name": "Mental Health America - Latinx Support",
+          "link": "https://mhanational.org/issues/latinx-mental-health",
+          "description": "Resources and support to address mental health concerns in the Latinx community."
+      }
+  ],
+  "asian-community": [
+      {
+          "name": "Asian Mental Health Collective",
+          "link": "https://www.asianmhc.org",
+          "description": "Support and education for mental health in Asian communities."
+      },
+      {
+          "name": "The National Asian American Pacific Islander Mental Health Association (NAAPIMHA)",
+          "link": "https://www.naapimha.org",
+          "description": "Promotes mental health and wellness across Asian American communities."
+      }
   ],
   "indigenous-community": [
-    {
-      "name": "Native American Rehabilitation Association",
-      "link": "https://www.naranorthwest.org",
-      "description": "Provides services to Native American individuals and families in need of mental health support."
-    },
-    {
-      "name": "National Indigenous Women's Resource Center",
-      "link": "https://www.niwrc.org",
-      "description": "Works to support Indigenous women in crisis, including mental health services."
-    }
+      {
+          "name": "Native American Rehabilitation Association",
+          "link": "https://www.naranorthwest.org",
+          "description": "Provides services to Native American individuals and families in need of mental health support."
+      },
+      {
+          "name": "National Indigenous Women's Resource Center",
+          "link": "https://www.niwrc.org",
+          "description": "Works to support Indigenous women in crisis, including mental health services."
+      }
   ]
 }
