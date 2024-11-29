@@ -77,6 +77,9 @@ function findResources() {
     const isLanguageAccessible = document.getElementById("language-accessible").checked;
     const isAffordable = document.getElementById("affordable-options").checked;
 
+    const generalResourcesSection = document.getElementById("general-resources-section");
+
+    // Filter resources
     filteredResources = resources.filter(resource => {
         const matchesIssue = !issue || resource.tags.includes(issue);
         const matchesSupport = !support || resource.tags.includes(support);
@@ -86,6 +89,17 @@ function findResources() {
         return matchesIssue && matchesSupport && matchesLanguage && matchesAffordable;
     });
 
+    // Check if "Language Accessible" filter is checked
+    if (isLanguageAccessible) {
+        generalResourcesSection.style.display = "block"; // Show the general resources section
+    } else {
+        generalResourcesSection.style.display = "none"; // Hide the general resources section
+    }
+
     currentPage = 1;
     displayResources();
+}
+if (filteredResources.length === 0) {
+    const resultsSection = document.getElementById("resource-list");
+    resultsSection.innerHTML = "<p style='text-align:center;'>No specific resources found. Please check the general resources section below.</p>";
 }
