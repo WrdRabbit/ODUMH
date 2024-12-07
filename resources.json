@@ -4,8 +4,8 @@
         "link": "https://www.betterhelp.com",
         "tags": ["therapist", "anxiety", "depression", "affordable"],
         "descriptions": {
-            "affordable": "Offers financial aid to make therapy more accessible.",
-            "default": "Online therapy platform connecting users with licensed therapists."
+            "affordable": "Offers financial aid to make therapy more accessible for individuals in need.",
+            "default": "Online therapy platform connecting users with licensed therapists for personalized mental health support."
         }
     },
     {
@@ -13,7 +13,7 @@
         "link": "https://www.talkspace.com",
         "tags": ["therapist", "anxiety", "depression"],
         "descriptions": {
-            "default": "Connects users with licensed therapists through an app."
+            "default": "Connects users with licensed therapists through an app, offering messaging and video sessions for flexible support."
         }
     },
     {
@@ -21,7 +21,7 @@
         "link": "https://www.amwell.com",
         "tags": ["therapist", "anxiety"],
         "descriptions": {
-            "default": "Telehealth service offering mental health counseling."
+            "default": "Telehealth service offering mental health counseling from licensed professionals, available via video calls."
         }
     },
     {
@@ -29,9 +29,9 @@
         "link": "https://www.crisistextline.org",
         "tags": ["hotlines", "anxiety", "affordable", "language"],
         "descriptions": {
-            "language": "Supports English and Spanish. Text 'Hello' or 'HOLA' to 741741 for 24/7 support.",
-            "affordable": "Free 24/7 support through text. Text 'HELLO' to 741741.",
-            "default": "24/7 crisis support through text for individuals in need."
+            "language": "(Supports English and Spanish) Text 'HELLO' or 'HOLA' to 741741 for 24/7 support via text.",
+            "affordable": "Provides free 24/7 support through text for those in crisis. Text 'HELLO' to 741741 to connect.",
+            "default": "24/7 crisis support through text for individuals in need, with multilingual options."
         }
     },
     {
@@ -39,8 +39,8 @@
         "link": "https://www.samhsa.gov/find-help/national-helpline",
         "tags": ["hotlines", "anxiety", "addiction", "affordable"],
         "descriptions": {
-            "affordable":"Free, confidential 24/7 treatment referrals and information.",
-            "default": "Free, confidential 24/7 treatment referrals and information."
+            "affordable": "Free, confidential 24/7 helpline offering treatment referrals and information for substance abuse and mental health issues.",
+            "default": "Provides free and confidential 24/7 treatment referrals and mental health information across the U.S."
         }
     },
     {
@@ -48,7 +48,7 @@
         "link": "https://www.headspace.com",
         "tags": ["apps", "anxiety"],
         "descriptions": {
-            "default": "Meditation app with guided sessions for relaxation."
+            "default": "A meditation app with guided sessions designed to help reduce stress and improve mindfulness."
         }
     },
     {
@@ -56,7 +56,7 @@
         "link": "https://www.calm.com",
         "tags": ["apps", "anxiety", "depression"],
         "descriptions": {
-            "default": "App for relaxation, sleep, and mindfulness."
+            "default": "An app offering guided meditations, sleep aids, and mindfulness exercises to promote relaxation and mental clarity."
         }
     },
     {
@@ -64,7 +64,7 @@
         "link": "https://www.sanvello.com",
         "tags": ["apps", "anxiety", "depression"],
         "descriptions": {
-            "default": "App with tools for managing anxiety and depression."
+            "default": "App providing tools and strategies to manage anxiety and depression, with therapy and peer support options."
         }
     },
     {
@@ -72,9 +72,9 @@
         "link": "https://www.7cups.com",
         "tags": ["supportGroups", "anxiety", "depression", "language", "affordable"],
         "descriptions": {
-            "language": "Supports multiple languages including English, Spanish, French, and more.",
-            "affordable": "Free access to trained volunteer listeners for emotional support.",
-            "default": "Online support with trained listeners and access to therapists."
+            "language": "Supports multiple languages including English, Spanish, and French for emotional support via chat.",
+            "affordable": "Offers free access to trained volunteer listeners for emotional support, along with therapy options.",
+            "default": "Online support platform connecting individuals with trained listeners and licensed therapists."
         }
     },
     {
@@ -82,7 +82,7 @@
         "link": "https://www.reddit.com/r/Anxiety/",
         "tags": ["supportGroups", "anxiety"],
         "descriptions": {
-            "default": "A community on Reddit for anxiety support."
+            "default": "A supportive online community on Reddit where individuals can share experiences and seek advice for managing anxiety."
         }
     },
     {
@@ -90,7 +90,7 @@
         "link": "https://adaa.org",
         "tags": ["education", "anxiety"],
         "descriptions": {
-            "default": "Resources and information on anxiety and depression."
+            "default": "Nonprofit organization providing resources, education, and support for individuals managing anxiety and depression."
         }
     },
     {
@@ -98,7 +98,7 @@
         "link": "https://www.mind.org.uk",
         "tags": ["education", "anxiety", "depression"],
         "descriptions": {
-            "default": "Mental health charity offering information on anxiety and depression."
+            "default": "Mental health charity offering information, resources, and support for individuals dealing with anxiety and depression."
         }
     },
     {
@@ -106,7 +106,7 @@
         "link": "https://suicidepreventionlifeline.org",
         "tags": ["hotlines", "depression"],
         "descriptions": {
-            "default": "A 24/7 hotline for those in distress or in need of emotional support."
+            "default": "A 24/7 hotline providing free and confidential support for individuals in distress or experiencing suicidal thoughts."
         }
     },
     {
@@ -114,7 +114,7 @@
         "link": "https://www.crisischat.org",
         "tags": ["hotlines", "depression"],
         "descriptions": {
-            "default": "Chat-based support for individuals dealing with depression."
+            "default": "Offers online chat-based support for individuals dealing with depression or emotional distress."
         }
     },
     {
@@ -122,7 +122,7 @@
         "link": "https://www.youper.ai",
         "tags": ["apps", "depression"],
         "descriptions": {
-            "default": "Mental health app with mood tracking and AI-driven support."
+            "default": "Mental health app that combines mood tracking with AI-driven therapeutic conversations to support emotional well-being."
         }
     },
     {
@@ -130,20 +130,20 @@
         "link": "https://www.aa.org",
         "tags": ["supportGroups", "addiction", "language"],
         "descriptions": {
-            "language": "Supports over 100 languages through global online and in-person meetings.",
-            "default": "Support group for individuals recovering from alcohol addiction."
+            "language": "(Supports over 100 languages) Provides global access to online and in-person recovery meetings for alcohol addiction.",
+            "default": "Community-based support group offering help and resources for individuals recovering from alcohol addiction."
         }
     },
     {
         "name": "SMART Recovery",
         "link": "https://smartrecovery.org/",
-        "tags": ["supportGroups", "addiction", "affordable", "language"],
+        "tags": ["supportGroups", "apps", "addiction", "affordable", "language"],
         "descriptions": {
-            "language": "Supports English, Spanish, and several other European languages.",
-            "affordable": "Free online support groups for addiction recovery with a science-based approach.",
-            "default": "Offers multilingual resources for those recovering from addiction."
+            "language": "(Supports English, Spanish, and several other languages) Offers self-help resources and group support.",
+            "affordable": "Provides free online support groups focusing on science-based recovery techniques.",
+            "default": "Science-based addiction recovery program emphasizing empowerment and self-management."
         }
-    },
+    },    
     {
         "name": "Option B",
         "link": "https://optionb.org/",
@@ -267,16 +267,6 @@
         "tags": ["apps", "depression"],
         "descriptions": {
             "default": "Science-backed app designed to help users manage depression and build resilience."
-        }
-    },
-    {
-        "name": "SMART Recovery",
-        "link": "https://smartrecovery.org/",
-        "tags": ["supportGroups", "addiction", "affordable", "language"],
-        "descriptions": {
-            "language": "Supports multiple languages, including English and Spanish.",
-            "affordable": "Free online support groups for addiction recovery.",
-            "default": "Science-based addiction recovery program with multilingual options."
         }
     },
     {
